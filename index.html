@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nita's PortFolio</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+  <!-- NavBar Section -->
+  <header>
+    <div class="logo">
+      <img src="images\profile.jpeg" id="logo-profile" alt="profile image">
+      <a href="/"><span style="font-family: Arial, Helvetica, sans-serif;"></span>Port<span
+          style="color: red;">Folio</span></a>
+
+    </div>
+
+    <ul class="navbar" id="nav-menu">
+      <li><a class="nav-link home" href="#home">Home</a></li>
+      <li><a class="nav-link about" href="#about">About Me</a></li>
+      <li><a class="nav-link skills" href="#skills">Skills</a></li>
+      <li><a class="nav-link projects" href="#projects">Projects</a></li>
+      <li><a class="nav-link contact" href="#contact">Contact</a></li>
+      <a class="nav-link resume" download id="resume-button-1"
+        href="https://drive.google.com/uc?id=1RfQM1YDSOnKBfxiKdc010d5hv__jiRQl&export=download" rel="noreferrer"
+        target="_blank">
+        <i class="uil uil-message nav__icon"></i> Resume
+      </a>
+
+    </ul>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home">
+    <div class="home-text">
+      <span>Hello👋, I'm</span>
+      <h1>Nita Pankaj Chaudhari</h1>
+      <h2>Full Stack Web developer</h2>
+      <div>
+        <img src="images/anim.gif" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- About section -->
+  <section class="about" id="about">
+    <div>
+      <h1>About Me</h1>
+    </div>
+    <div>
+      <div class="img">
+        <img src="images/profile.jpeg" alt="">
+      </div>
+
+      <div class="heading">
+        <p>A passionate and skilled Full-Stack Web Developer with expertise in HTML, CSS, JavaScript, React.js,
+          Express.js, and Node.js, as well as proficiency in MongoDB and Firebase. Successfully completed a
+          rigorous 1000+ hour full-stack web development program at Masai School, which included in-depth
+          training in Generative AI and Prompt Engineering.
+          Gained hands-on experience through individual and collaborative projects, showcasing the ability to
+          solve complex problems, build dynamic web applications, and deliver user-focused solutions.
+          Seeking opportunities to contribute my technical skills, creativity, and enthusiasm to innovative
+          projects, while continuously expanding my knowledge in this ever-evolving field.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Skills section -->
+  <div class="skill-main" id="skills">
+    <div class="skills-section">
+      <h1>Technical Skills</h1>
+      <div>
+        <div class="skill-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="HTML" class="skill-logo">
+          <span class="skill-name">HTML</span>
+        </div>
+        <div class="skill-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS" class="skill-logo">
+          <span class="skill-name">CSS</span>
+        </div>
+        <div class="skill-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript" class="skill-logo">
+          <span class="skill-name">JavaScript</span>
+        </div>
+        <div class="skill-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/5968/5968342.png" alt="Python" class="skill-logo">
+          <span class="skill-name">Python</span>
+        </div>
+        <div class="skill-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/1199/1199125.png" alt="MySQL" class="skill-logo">
+          <span class="skill-name">MySQL</span>
+        </div>
+        <div class="skill-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/919/919836.png" alt="MongoDB" class="skill-logo">
+          <span class="skill-name">MongoDB</span>
+        </div>
+        <div class="skill-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/5968/5968335.png" alt="Firebase" class="skill-logo">
+          <span class="skill-name">Firebase</span>
+        </div>
+        <div class="skill-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/2111/2111288.png" alt="GitHub" class="skill-logo">
+          <span class="skill-name">GitHub</span>
+        </div>
+        <div class="skill-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/919/919851.png" alt="React" class="skill-logo">
+          <span class="skill-name">React</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Project section -->
+  <section class="projects" id="projects">
+    <div>
+      <h1>Projects Build by Me</h1>
+    </div>
+    <div class="project-card">
+      <div class="cards">
+        <div class="slider">
+          <div class="slider-images">
+            <img src="images/project1/home.png" alt="Home Page">
+            <img src="images/project1/menu.png" alt="Menu Page">
+            <img src="images/project1/about.png" alt="About Us">
+            <img src="images/project1/testimonials.png" alt="testimonials">
+            <img src="images/project1/contact.png" alt="contact">
+          </div>
+          <button class="slider-button left" onclick="prevImage()">&#8249;</button>
+          <button class="slider-button right" onclick="nextImage()">&#8250;</button>
+        </div>
+        <div class="description">
+          <div class="info">
+            <h2>Bean & Bite cafe's webpage.</h2>
+            <p>This project involves creating a website for a local café shop to increase its online visibility and
+              attract new customers. The website aims to showcase the café's unique offerings, products, and atmosphere
+              through modern design elements such as glassmorphism, animations, and responsive layouts.</p>
+            <p><b>Collaborative project:</b> Accomplished with a team of 5 developers, completed in 3 days</p>
+            <p><b>Contribution:</b>Design Menu Functionality | Build Testimonials Page </p>
+            <p><b>Tech Stack:</b>HTML | CSS | JavaScript</p>
+          </div>
+        </div>
+        <div class="desc-btn">
+          <button class="link-btn github"><a href="https://github.com/Aranv-viswas/AI-Athletes_012" target="_blank">
+              <i class="fa-brands fa-github"></i> Code
+            </a></button>
+          <button class="link-btn live">
+            <a href="https://bean-and-bite.netlify.app/" target="_blank">
+              <i class="fa-brands fa-webflow"></i> Live Demo</i>
+            </a></button>
+        </div>
+
+      </div>
+      <div class="cards">
+        <div class="slider">
+          <div class="slider-images">
+            <img src="images/project2/home.png" alt="Home Page">
+            <img src="images/project2/login-page.png" alt="Login Page">
+            <img src="images/project2/dashboard.png" alt="dashboard ">
+            <img src="images/project2/whiteboard.png" alt="whiteboard">
+          </div>
+          <button class="slider-button left" onclick="prevImage()">&#8249;</button>
+          <button class="slider-button right" onclick="nextImage()">&#8250;</button>
+        </div>
+        <div class="description">
+          <div class="info">
+            <h2>Whiteboard Web Application</h2>
+            <p>
+              It allows users to draw, sketch,
+              and save their creations securely in a
+              Firebase database. Designed with a focus
+              on simplicity, the app is perfect for
+              brainstorming, educational purposes,
+              or casual creativity.
+            </p>
+            <p><b>Collaborative project:</b>
+              Accomplished with a team of 5 developers,
+              completed in 5 days</p>
+            <p><b>Contribution:</b>Build Whiteboard Page using canvas | Work with firebase integration. </p>
+            <p><b>Tech Stack:</b>HTML | CSS | JavaScript </p>
+          </div>
+        </div>
+        <div class="desc-btn">
+          <button class="link-btn github"><a href="https://github.com/Sharwan-Kumar-29/Quantum-Visionaries_002"
+              target="_blank">
+              <i class="fa-brands fa-github"></i> Code</a></button>
+          <button class="link-btn live"><a href="https://quantum-visionaries-002.netlify.app" target="_blank"><i
+                class="fa-brands fa-webflow"></i> Live
+              Demo</a></button>
+        </div>
+
+      </div>
+      <div class="cards">
+        <div class="slider">
+          <div class="slider-images">
+            <img src="images/project3/home.png" alt="Home Page">
+            <img src="images/project3/category-page.png" alt="category Page">
+            <img src="images/project3/navbar.png" alt="navbar">
+          </div>
+          <button class="slider-button left" onclick="prevImage()">&#8249;</button>
+          <button class="slider-button right" onclick="nextImage()">&#8250;</button>
+        </div>
+        <div class="description">
+          <div class="info">
+            <h2>Bean & Bite cafe's webpage.</h2>
+            <p>The Nykaa clone project serves as a comprehensive platform for learning,
+               prototyping, and demonstrating technical skills. 
+              It provides practical experience in web development, 
+              UI/UX design, database management, and web security.</p>
+            <p><b>Collaborative project:</b> Accomplished with a team of 4 developers, completed in 4 days</p>
+            <p><b>Contribution:</b>Design Category Page | Work with Sorting Products</p>
+            <p><b>Tech Stack:</b>HTML | CSS | JavaScript | JSON</p>
+          </div>
+        </div>
+        <div class="desc-btn">
+          <button class="link-btn github"><a href="https://github.com/DeeproChakraborty1/Fontend_Flames" target="_blank"><i
+                class="fa-brands fa-github"></i> Code
+            </a>
+          </button>
+          <button class="link-btn live"><a href="https://spiffy-licorice-b2ff6c.netlify.app/" target="_blank"><i
+                class="fa-brands fa-webflow"></i> Live
+              Demo</a></button>
+        </div>
+
+      </div>
+      <!-- <div class="cards">
+          <div class="slider">
+            <div class="slider-images">
+              <img src="images/project1/home.png" alt="Home Page">
+              <img src="images/project1/menu.png" alt="Menu Page">
+              <img src="images/project1/about.png" alt="About Us">
+              <img src="images/project1/testimonials.png" alt="testimonials">
+              <img src="images/project1/contact.png" alt="contact">
+            </div>
+            <button class="slider-button left" onclick="prevImage()">&#8249;</button>
+            <button class="slider-button right" onclick="nextImage()">&#8250;</button>
+          </div>
+          <div class="description">
+            <div class="info">
+              <h2>Bean & Bite cafe's webpage.</h2>
+              <p>This project involves creating a website for a local café shop to increase its online visibility and attract new customers. The website aims to showcase the café's unique offerings, products, and atmosphere through modern design elements such as glassmorphism, animations, and responsive layouts.</p>
+              <p><b>Collaborative project:</b> Accomplished with a team of 4 developers, completed in 6 days</p>
+              <p><b>Contribution:</b>Design Menu Functionality | Build Testimonials Page </p>
+              <p><b>Tech Stack:</b>HTML | CSS | JavaScript</p>
+            </div>
+            <div class="desc-btn">
+              <button><a href="https://github.com/Aranv-viswas/AI-Athletes_012" target="_blank">Code</a></button>
+              <button><a href="https://bean-and-bite.netlify.app/" target="_blank">Live Demo</a></button>
+            </div>
+           
+
+
+          </div>
+  
+        </div> -->
+    </div>
+  </section>
+
+  <!-- Github stats section  -->
+  <section class="react-activity-calendar">
+    <div>
+      <h1>GitHub Statistics</h1>
+      <span>& Calendar</span>
+    </div>
+    <br>
+    <div class="react-activity-calendar">
+      <!-- Loading the contributions calendar link -->
+      <img src="https://ghchart.rshah.org/Nitachaudhari" alt="react-activity-calendar" />
+    </div>
+    <br>
+    <div id="git-stat">
+      <div>
+        <!-- GitHub streak stats -->
+        <img id="github-streak-stats"
+          src="https://github-readme-streak-stats.herokuapp.com?user=Nitachaudhari&theme=moonlight&border_radius=6.5&date_format=M%20j%5B%2C%20Y%5D"
+          alt="streak-stat" />
+        <br>
+        <!-- GitHub stats card -->
+        <img id="github-stats-card"
+          src="https://github-readme-stats.vercel.app/api?username=Nitachaudhari&show_icons=true&theme=moonlight"
+          alt="stat-card" />
+      </div>
+      <div>
+        <!-- GitHub top languages -->
+        <img id="github-top-langs"
+          src="https://github-readme-stats.vercel.app/api/top-langs/?username=Nitachaudhari&theme=moonlight"
+          alt="top_languages" />
+      </div>
+    </div>
+  </section>
+
+  <!-- contact section -->
+  <section id="contact" class="contact">
+
+    <div class="footer" class="contact">
+      <h1>Contact Me</h1>
+      <div class="footer-social">
+        <div>
+          <!-- <a id="contact-github" href="https://github.com/Nitachaudhari" target="_blank"><i class='bx bxl-github'></i></a> -->
+          <h5><a id="contact-github" href="https://github.com/Nitachaudhari" target="_blank"><i class="fa-brands fa-github"></i>  Nitachaudhari</a></h5>
+        </div>
+        <div>
+          <!-- <a id="contact-linkedin" href="https://www.linkedin.com/in/rushikesh-bhomale-aa29a3158" target="_blank"><i
+              class='bx bxl-linkedin'></i></a> -->
+          <h5><a id="contact-linkedin" href="https://www.linkedin.com/in/nita-chaudhari-a94038128/"
+              target="_blank"><i class="fa-brands fa-linkedin"></i>  Nita Chaudhari</a></h5>
+        </div>
+        <div>
+          <h5><i class="fa-solid fa-envelope"></i>  nitachaudhari1997@gmail.com</h5>
+        </div>
+        <div>
+          <h5><i class="fa-solid fa-mobile-screen-button"></i>  +91-8767281616</h5>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- footer bottom -->
+  <div class="footer-bottom">
+    <p> Thank You for visiting my PortFolio.</p>
+  </div>
+</body>
+
+</html>
+
+<script>
+  document.querySelectorAll('.slider').forEach((slider) => {
+    const sliderImages = slider.querySelector('.slider-images');
+    const images = slider.querySelectorAll('.slider-images img');
+    const totalImages = images.length;
+    let currentIndex = 0;
+
+    const updateSlider = () => {
+      sliderImages.style.transform = `translateX(-${currentIndex * 100}%)`;
+    };
+
+    const nextImage = () => {
+      currentIndex = (currentIndex + 1) % totalImages;
+      updateSlider();
+    };
+
+    const prevImage = () => {
+      currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+      updateSlider();
+    };
+
+    slider.querySelector('.slider-button.right').addEventListener('click', nextImage);
+    slider.querySelector('.slider-button.left').addEventListener('click', prevImage);
+  });
+
+</script>
