@@ -127,6 +127,7 @@ a{
     color: white;
     font-weight: bold;
     font-size: 2.5rem;
+    margin-bottom: 1rem;
 }
 .about img{
     width: 70%;
@@ -406,4 +407,159 @@ a{
     margin-bottom: 1rem;
     
 }
+/* Default Styles for Desktop View */
+.navbar {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+  }
+  
+  #menu-icon {
+    display: none; 
+    font-size: 28px;
+    cursor: pointer;
+  }
+  
+  /* Mobile view*  */
+@media screen and (max-width:768px) {
+    .logo{
+        margin: 1rem;
+    }
 
+    #logo-profile{
+        width: 2rem;
+        height: 2rem;
+    }
+    #menu-icon {
+        display: block; /* Show the menu icon */
+        color: #333; /* Adjust color if needed */
+      }
+    
+      .navbar {
+        display: none; /* Hide the navbar by default */
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Adjust based on your header height */
+        right: 10px;
+        background-color: #fff; /* Background for the dropdown menu */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+        border-radius: 8px;
+        padding: 10px;
+        z-index: 1000;
+      }
+    
+      .navbar.active {
+        display: flex; /* Show the navbar when active */
+      }
+    
+      .navbar li {
+        margin: 10px 0;
+      }
+      .home-text span{
+        font-size:1rem;
+        margin-left: 6rem;
+    }
+      .home-text h1{
+        text-align: center;
+        font-size: 3rem;
+      }
+      .home-text h2{
+        text-align: center;
+        font-size: 1rem;
+      }
+   .about div{
+    display: inline;
+    text-align: center;
+    justify-content: center;
+    padding: 1rem;
+   }
+
+   .skills-section div{
+    display: inline-block;
+   }
+
+   .project-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+   }
+
+   .link-btn{
+    font-size: 0.5rem;
+    padding: 0.3rem;
+   }
+
+   .react-activity-calendar img{
+    width: 70%;
+   }
+
+}
+
+/* desktop view */
+@media screen and (max-width:1024px) and (min-width:768px){
+    
+    #menu-icon {
+        display: block; /* Show the menu icon */
+        color: #333; /* Adjust color if needed */
+      }
+    
+      .navbar {
+        display: none; /* Hide the navbar by default */
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Adjust based on your header height */
+        right: 10px;
+        background-color: #fff; /* Background for the dropdown menu */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+        border-radius: 8px;
+        padding: 10px;
+        z-index: 1000;
+      }
+    
+      .navbar.active {
+        display: flex; /* Show the navbar when active */
+      }
+    
+      .navbar li {
+        margin: 10px 0;
+      }
+
+      .about{
+        width: 100%;
+      }
+
+      .about-img-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+      }
+      /* .about div{
+        display: inline;
+        text-align: center;
+        justify-content: center;
+        padding: 1rem;
+       } */
+       .about h1{
+        text-align: center;
+       }
+       .img{
+        width: 100%;
+       }
+       .heading{
+        width: 100%;
+       }
+
+       .skills-section div{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+       }
+    
+       .project-card{
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+       }
+
+       
+} 
