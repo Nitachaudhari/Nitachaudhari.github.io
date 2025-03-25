@@ -18,7 +18,7 @@ body{
 }
 
 section {
-    padding-top: 2rem; 
+    padding-top: 1rem; 
 }
 
 
@@ -43,8 +43,8 @@ header{
     justify-content: center;
     align-items: center;
     padding: 0.1rem;
-    background-color: rgba(255, 255, 255, 0.968);
-    border: 1px dotted rgba(213, 210, 210, 0.597);
+    /* background-color: rgba(255, 255, 255, 0.968); */
+    /* border: 1px dotted rgba(213, 210, 210, 0.597); */
 }
 
 .logo a{
@@ -91,7 +91,7 @@ a{
 }
 .home-text{
     margin-top: 3%;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 .home-text div{
     display: flex;
@@ -135,7 +135,7 @@ a{
     
 }
 .img, .heading{
-    width: 43%;
+    width: 80%;
     /* border: 1px solid black; */
     padding: 3rem;
 }
@@ -411,6 +411,7 @@ a{
 .navbar {
     display: flex;
     gap: 20px;
+    padding: 1rem;
     list-style: none;
   }
   
