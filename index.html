@@ -1,416 +1,367 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nita's PortFolio</title>
-  <link rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nita Chaudhari - Full Stack Developer</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
-
 <body>
-  <!-- NavBar Section -->
-  <header>
-    <div class="logo">
-      <h2>PortFolio</h2>
+    <!-- Scroll Progress -->
+    <div class="progress-bar"></div>
 
-    </div>
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h2>Nita<span>.dev</span></h2>
+            </div>
+            <div class="nav-toggle" id="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="NitaPankajChaudhari-FullStackWebDeveloper-ubfK.pdf" class="resume-btn" id="resume-button">
+                    <i class="fas fa-download"></i> Resume</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="bx bx-menu" id="menu-icon"><i class="fa-solid fa-bars"></i></div>
+    <!-- Hero -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <p class="greeting fade-in">Hello 👋, I'm</p>
+            <h1 class="name fade-in-up">Nita Pankaj Chaudhari</h1>
+            <h2 class="title fade-in-up">
+                <span id="typing-text"></span>
+                <span class="cursor-blink">|</span>
+            </h2>
+            <p class="description fade-in-up">Crafting digital experiences with modern web technologies</p>
+            <div class="hero-buttons fade-in-up">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+        <div class="hero-image fade-in">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+            <img src="images/anim.gif" alt="Developer Animation">
+        </div>
+    </section>
 
-    <ul class="navbar" id="nav-menu">
-      <li><a class="nav-link home" href="#home">Home</a></li>
-      <li><a class="nav-link about" href="#about">About Me</a></li>
-      <li><a class="nav-link skills" href="#skills">Skills</a></li>
-      <li><a class="nav-link projects" href="#projects">Projects</a></li>
-      <li><a class="nav-link contact" href="#contact">Contact</a></li>
-      <a class="nav-link resume" id="resume-button-1"
-   href="NitaPankajChaudhari-FullStackWebDeveloper-ubfK.pdf">
-   <i class="uil uil-message nav__icon"></i> Resume
-</a>
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>A passionate and skilled <strong>Full-Stack Web Developer</strong> with expertise in HTML, CSS, JavaScript, React.js, Express.js, and Node.js, as well as proficiency in MongoDB and Firebase.</p>
+                    <p>Successfully completed a rigorous <strong>1000+ hour full-stack web development program</strong> at Masai School, which included in-depth training in Generative AI and Prompt Engineering.</p>
+                    <p>Gained hands-on experience through individual and collaborative projects, showcasing the ability to solve complex problems, build dynamic web applications, and deliver user-focused solutions.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h3>10+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>1000+</h3>
+                            <p>Hours of Coding</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>15+</h3>
+                            <p>Technologies</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Skills -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968267.png" alt="HTML">
+                    </div>
+                    <h3>HTML5</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS">
+                    </div>
+                    <h3>CSS3</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript">
+                    </div>
+                    <h3>JavaScript</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/512/919/919851.png" alt="React">
+                    </div>
+                    <h3>React.js</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/512/919/919825.png" alt="Node">
+                    </div>
+                    <h3>Node.js</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 70%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/512/919/919836.png" alt="MongoDB">
+                    </div>
+                    <h3>MongoDB</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968342.png" alt="Python">
+                    </div>
+                    <h3>Python</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 65%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111288.png" alt="GitHub">
+                    </div>
+                    <h3>GitHub</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Projects -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/project1/home.png" alt="Bean & Bite Cafe">
+                        <div class="project-overlay">
+                            <a href="https://github.com/Aranv-viswas/AI-Athletes_012" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://bean-and-bite.netlify.app/" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Bean & Bite Café</h3>
+                        <p>A modern café website with glassmorphism effects, animations, and responsive design</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
 
-  
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/project2/home.png" alt="Whiteboard App">
+                        <div class="project-overlay">
+                            <a href="https://github.com/Sharwan-Kumar-29/Quantum-Visionaries_002" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://quantum-visionaries-002.netlify.app" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Whiteboard Application</h3>
+                        <p>Interactive drawing app with Firebase integration for saving creations</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>Canvas</span>
+                            <span>Firebase</span>
+                        </div>
+                    </div>
+                </div>
 
-    </ul>
-  </header>
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/project3/home.png" alt="Nykaa Clone">
+                        <div class="project-overlay">
+                            <a href="https://github.com/DeeproChakraborty1/Fontend_Flames" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://spiffy-licorice-b2ff6c.netlify.app/" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Nykaa Clone</h3>
+                        <p>E-commerce platform clone with sorting, filtering, and product management</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>JSON</span>
+                        </div>
+                    </div>
+                </div>
 
-  <!-- Home Section -->
-  <section id="home">
-    <div class="home-text">
-      <span>Hello👋, I'm</span>
-      <h1>Nita Pankaj Chaudhari</h1>
-      <h2>Full Stack Web developer</h2>
-      <div>
-        <img src="images/anim.gif" alt="">
-      </div>
-    </div>
-  </section>
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/project4/home.png" alt="Fitness Buddy">
+                        <div class="project-overlay">
+                            <a href="https://github.com/Nitachaudhari/Fitness_Buddy" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://fitnessbuddy1.netlify.app/" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Fitness Buddy</h3>
+                        <p>Community-driven fitness app to find workout buddies and track progress</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Firebase</span>
+                            <span>Chakra UI</span>
+                        </div>
+                    </div>
+                </div>
 
-  <!-- About section -->
-  <section class="about" id="about">
-    <div>
-      <h1>About Me</h1>
-    </div>
-    <div class="about-img-info">
-      <!-- <div class="img">
-        <img src="images/profile.jpeg" alt="">
-      </div> -->
+                <!-- Project 5 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/project5/home.png" alt="Kids Learning">
+                        <div class="project-overlay">
+                            <a href="https://github.com/Nitachaudhari/KidsWebpage" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://rainbow-narwhal-c4185a.netlify.app/" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Kids E-Learning</h3>
+                        <p>Interactive educational website for kids with games and animations</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>CSS</span>
+                            <span>Lucide Icons</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      <div class="heading">
-        <p>A passionate and skilled Full-Stack Web Developer with expertise in HTML, CSS, JavaScript, React.js,
-          Express.js, and Node.js, as well as proficiency in MongoDB and Firebase. Successfully completed a
-          rigorous 1000+ hour full-stack web development program at Masai School, which included in-depth
-          training in Generative AI and Prompt Engineering.
-          Gained hands-on experience through individual and collaborative projects, showcasing the ability to
-          solve complex problems, build dynamic web applications, and deliver user-focused solutions.
-          Seeking opportunities to contribute my technical skills, creativity, and enthusiasm to innovative
-          projects, while continuously expanding my knowledge in this ever-evolving field.</p>
-          
+    <!-- GitHub Stats -->
+    <section class="github-stats">
+        <div class="container">
+            <h2 class="section-title">GitHub Statistics</h2>
+            <div class="stats-container">
+                <img src="https://ghchart.rshah.org/4facfe/Nitachaudhari" alt="GitHub Calendar" class="github-calendar">
+                <img src="https://github-readme-streak-stats.herokuapp.com?user=Nitachaudhari&theme=tokyonight&border_radius=10" alt="GitHub Streak" class="github-streak">
+            </div>
+        </div>
+    </section>
 
-      </div>
-    </div>
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-subtitle">Let's discuss your next project</p>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>GitHub</h3>
+                            <a href="https://github.com/Nitachaudhari" target="_blank">@Nitachaudhari</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>LinkedIn</h3>
+                            <a href="https://www.linkedin.com/in/nita-chaudhari-a94038128/" target="_blank">Nita Chaudhari</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <a href="mailto:nitachaudhari1997@gmail.com">nitachaudhari1997@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Phone</h3>
+                            <a href="tel:+918767281616">+91 8767281616</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Nita Chaudhari. All rights reserved.</p>
+            <p>Built with ❤️ using HTML, CSS & JavaScript</p>
+        </div>
+    </footer>
 
-  <!-- Skills section -->
-  <div class="skill-main" id="skills">
-    <div class="skills-section">
-      <h1>Technical Skills</h1>
-      <div>
-        <div class="skill-item">
-          <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="HTML" class="skill-logo">
-          <span class="skill-name">HTML</span>
-        </div>
-        <div class="skill-item">
-          <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS" class="skill-logo">
-          <span class="skill-name">CSS</span>
-        </div>
-        <div class="skill-item">
-          <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript" class="skill-logo">
-          <span class="skill-name">JavaScript</span>
-        </div>
-        <div class="skill-item">
-          <img src="https://cdn-icons-png.flaticon.com/512/5968/5968342.png" alt="Python" class="skill-logo">
-          <span class="skill-name">Python</span>
-        </div>
-        <div class="skill-item">
-          <img src="https://cdn-icons-png.flaticon.com/512/1199/1199125.png" alt="MySQL" class="skill-logo">
-          <span class="skill-name">MySQL</span>
-        </div>
-        <div class="skill-item">
-          <img src="https://cdn-icons-png.flaticon.com/512/919/919836.png" alt="MongoDB" class="skill-logo">
-          <span class="skill-name">MongoDB</span>
-        </div>
-        <div class="skill-item">
-          <img src="https://cdn-icons-png.flaticon.com/512/5968/5968335.png" alt="Firebase" class="skill-logo">
-          <span class="skill-name">Firebase</span>
-        </div>
-        <div class="skill-item">
-          <img src="https://cdn-icons-png.flaticon.com/512/2111/2111288.png" alt="GitHub" class="skill-logo">
-          <span class="skill-name">GitHub</span>
-        </div>
-        <div class="skill-item">
-          <img src="https://cdn-icons-png.flaticon.com/512/919/919851.png" alt="React" class="skill-logo">
-          <span class="skill-name">React</span>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- Project section -->
-  <section class="projects" id="projects">
-    <div>
-      <h1>Projects Build by Me</h1>
-    </div>
-    <div class="project-card">
-      <!-- Project 1 -->
-      <div class="cards">
-        <div class="slider">
-          <div class="slider-images">
-            <img src="images/project1/home.png" alt="Home Page">
-            <img src="images/project1/menu.png" alt="Menu Page">
-            <img src="images/project1/about.png" alt="About Us">
-            <img src="images/project1/testimonials.png" alt="testimonials">
-            <img src="images/project1/contact.png" alt="contact">
-          </div>
-          <button class="slider-button left" onclick="prevImage()">&#8249;</button>
-          <button class="slider-button right" onclick="nextImage()">&#8250;</button>
-        </div>
-        <div class="description">
-          <div class="info">
-            <h2>Bean & Bite cafe's webpage.</h2>
-            <p>This project involves creating a website for a local café shop to increase its online visibility and
-              attract new customers. The website aims to showcase the café's unique offerings, products, and atmosphere
-              through modern design elements such as glassmorphism, animations, and responsive layouts.</p>
-            <p><b>Collaborative project:</b> Accomplished with a team of 5 developers, completed in 3 days</p>
-            <p><b>Contribution:</b>Design Menu Functionality | Build Testimonials Page </p>
-            <p><b>Tech Stack:</b>HTML | CSS | JavaScript</p>
-          </div>
-        </div>
-        <div class="desc-btn">
-          <button class="link-btn github"><a href="https://github.com/Aranv-viswas/AI-Athletes_012" target="_blank">
-              <i class="fa-brands fa-github"></i> Code
-            </a></button>
-          <button class="link-btn live">
-            <a href="https://bean-and-bite.netlify.app/" target="_blank">
-              <i class="fa-brands fa-webflow"></i> Live Demo</i>
-            </a></button>
-        </div>
-
-      </div>
-      <!-- Project 2 -->
-      <div class="cards">
-        <div class="slider">
-          <div class="slider-images">
-            <img src="images/project2/home.png" alt="Home Page">
-            <img src="images/project2/login-page.png" alt="Login Page">
-            <img src="images/project2/dashboard.png" alt="dashboard ">
-            <img src="images/project2/whiteboard.png" alt="whiteboard">
-          </div>
-          <button class="slider-button left" onclick="prevImage()">&#8249;</button>
-          <button class="slider-button right" onclick="nextImage()">&#8250;</button>
-        </div>
-        <div class="description">
-          <div class="info">
-            <h2>Whiteboard Web Application</h2>
-            <p>
-              It allows users to draw, sketch,
-              and save their creations securely in a
-              Firebase database. Designed with a focus
-              on simplicity, the app is perfect for
-              brainstorming, educational purposes,
-              or casual creativity.
-            </p>
-            <p><b>Collaborative project:</b>
-              Accomplished with a team of 5 developers,
-              completed in 5 days</p>
-            <p><b>Contribution:</b>Build Whiteboard Page using canvas | Work with firebase integration. </p>
-            <p><b>Tech Stack:</b>HTML | CSS | JavaScript </p>
-          </div>
-        </div>
-        <div class="desc-btn">
-          <button class="link-btn github"><a href="https://github.com/Sharwan-Kumar-29/Quantum-Visionaries_002"
-              target="_blank">
-              <i class="fa-brands fa-github"></i> Code</a></button>
-          <button class="link-btn live"><a href="https://quantum-visionaries-002.netlify.app" target="_blank"><i
-                class="fa-brands fa-webflow"></i> Live
-              Demo</a></button>
-        </div>
-
-      </div>
-      <!-- Project 3 -->
-      <div class="cards">
-        <div class="slider">
-          <div class="slider-images">
-            <img src="images/project3/home.png" alt="Home Page">
-            <img src="images/project3/category-page.png" alt="category Page">
-            <img src="images/project3/navbar.png" alt="navbar">
-          </div>
-          <button class="slider-button left" onclick="prevImage()">&#8249;</button>
-          <button class="slider-button right" onclick="nextImage()">&#8250;</button>
-        </div>
-        <div class="description">
-          <div class="info">
-            <h2>Nykka Clone webpage.</h2>
-            <p>The Nykaa clone project serves as a comprehensive platform for learning,
-               prototyping, and demonstrating technical skills. 
-              It provides practical experience in web development, 
-              UI/UX design, database management, and web security.</p>
-            <p><b>Collaborative project:</b> Accomplished with a team of 4 developers, completed in 4 days</p>
-            <p><b>Contribution:</b>Design Category Page | Work with Sorting Products</p>
-            <p><b>Tech Stack:</b>HTML | CSS | JavaScript | JSON</p>
-          </div>
-        </div>
-        <div class="desc-btn">
-          <button class="link-btn github"><a href="https://github.com/DeeproChakraborty1/Fontend_Flames" target="_blank"><i
-                class="fa-brands fa-github"></i> Code
-            </a>
-          </button>
-          <button class="link-btn live"><a href="https://spiffy-licorice-b2ff6c.netlify.app/" target="_blank"><i
-                class="fa-brands fa-webflow"></i> Live
-              Demo</a></button>
-        </div>
-
-      </div>
-      <!-- Project 4 -->
-      <div class="cards">
-        <div class="slider">
-          <div class="slider-images">
-            <img src="images/project4/home.png" alt="Home Page">
-            <img src="images/project4/login.png" alt="Login Page">
-            <img src="images/project4/profile.png" alt="Profile creation">
-            <img src="images/project4/dashboard.png" alt="Dashboard">
-            <img src="images/project4/buddymatching.png" alt="Buddy Matching">
-            <img src="images/project4/workouttracking.png" alt="Workout Tracking">
-
-          </div>
-          <button class="slider-button left" onclick="prevImage()">&#8249;</button>
-          <button class="slider-button right" onclick="nextImage()">&#8250;</button>
-        </div>
-        <div class="description">
-          <div class="info">
-            <h2>Fitness Buddy webpage.</h2>
-            <p>A community-driven fitness app to find workout buddies, 
-              track workouts, and stay motivated! This app connects users with 
-              similar fitness goals, allowing them to find workout partners,
-               share progress, and stay motivated in a supportive fitness community.</p>
-            <p><b>Collaborative project:</b> Accomplished with a team of 4 developers, completed in 4 days</p>
-            <p><b>Contribution:</b>Design Login/signup Page |profile cration buddy matching | work on dashboard</p>
-            <p><b>Tech Stack:</b>HTML | CSS | React | Firebase | ChakraUI | github</p>
-          </div>
-        </div>
-        <div class="desc-btn">
-          <button class="link-btn github"><a href="https://github.com/Nitachaudhari/Fitness_Buddy" target="_blank"><i
-                class="fa-brands fa-github"></i> Code
-            </a>
-          </button>
-          <button class="link-btn live"><a href="https://fitnessbuddy1.netlify.app/" target="_blank"><i
-                class="fa-brands fa-webflow"></i> Live
-              Demo</a></button>
-        </div>
-
-      </div>
-      <!-- Project 5 -->
-      <div class="cards">
-        <div class="slider">
-          <div class="slider-images">
-            <img src="images/project5/home.png" alt="Home Page">
-            <img src="images/project5/lesson.png" alt="Lessons Page">
-            <img src="images/project5/lession alphabet.png" alt="Lessons Alphabets pages">
-            <img src="images/project5/gamess.png" alt="Games Page">
-            <img src="images/project5/fruitmatching.png" alt="Game1 Page">
-            <img src="images/project5/countStar.png" alt="Game2 Page">
-            <img src="images/project5/footer.png" alt="footer">
-
-          </div>
-          <button class="slider-button left" onclick="prevImage()">&#8249;</button>
-          <button class="slider-button right" onclick="nextImage()">&#8250;</button>
-        </div>
-        <div class="description">
-          <div class="info">
-            <h2>Kids webpage.</h2>
-            <p>A fun and interactive e-learning website for kids built using React and Chakra UI. 
-              The website includes engaging animations, interactive games, 
-              and an intuitive UI to make learning enjoyable.</p>
-            <p><b>Solo Project : completed in 4 days</p>
-            <p><b>Tech Stack:</b>HTML | CSS | React |Lucid icons | JSON</p>
-          </div>
-        </div>
-        <div class="desc-btn">
-          <button class="link-btn github"><a href="https://github.com/Nitachaudhari/KidsWebpage" target="_blank"><i
-                class="fa-brands fa-github"></i> Code
-            </a>
-          </button>
-          <button class="link-btn live"><a href="https://rainbow-narwhal-c4185a.netlify.app/" target="_blank"><i
-                class="fa-brands fa-webflow"></i> Live
-              Demo</a></button>
-        </div>
-
-      </div>
-      <!-- Project 6 -->
-       
-    </div>
-  </section>
-
-  <!-- Github stats section  -->
-  <section class="react-activity-calendar">
-    <div>
-      <h1>GitHub Statistics</h1>
-      <span>& Calendar</span>
-    </div>
-    <br>
-    <div class="react-activity-calendar">
-      <!-- Loading the contributions calendar link -->
-      <img src="https://ghchart.rshah.org/Nitachaudhari" alt="react-activity-calendar" />
-    </div>
-    <br>
-    <div id="git-stat">
-      <div>
-        <!-- GitHub streak stats -->
-        <img id="github-streak-stats"
-          src="https://github-readme-streak-stats.herokuapp.com?user=Nitachaudhari&theme=moonlight&border_radius=6.5&date_format=M%20j%5B%2C%20Y%5D"
-          alt="streak-stat" />      
-    </div>
-  </section>
-
-  <!-- contact section -->
-  <section id="contact" class="contact">
-
-    <div class="footer" class="contact">
-      <h1>Contact Me</h1>
-      <div class="footer-social">
-        <div>
-          <!-- <a id="contact-github" href="https://github.com/Nitachaudhari" target="_blank"><i class='bx bxl-github'></i></a> -->
-          <h5><a id="contact-github" href="https://github.com/Nitachaudhari" target="_blank"><i class="fa-brands fa-github"></i>  Nitachaudhari</a></h5>
-        </div>
-        <div>
-          <!-- <a id="contact-linkedin" href="https://www.linkedin.com/in/rushikesh-bhomale-aa29a3158" target="_blank"><i
-              class='bx bxl-linkedin'></i></a> -->
-          <h5><a id="contact-linkedin" href="https://www.linkedin.com/in/nita-chaudhari-a94038128/"
-              target="_blank"><i class="fa-brands fa-linkedin"></i>  Nita Chaudhari</a></h5>
-        </div>
-        <div>
-          <h5><i class="fa-solid fa-envelope"></i>  nitachaudhari1997@gmail.com</h5>
-        </div>
-        <div>
-          <h5><i class="fa-solid fa-mobile-screen-button"></i>  +91-8767281616</h5>
-        </div>
-      </div>
-    </div>
-
-  </section>
-  <!-- footer bottom -->
-  <div class="footer-bottom">
-    <p> Thank You for visiting my PortFolio.</p>
-  </div>
+    <script src="index.js"></script>
 </body>
-
 </html>
-<script src="index.js"></script>
-<script>
-  document.querySelectorAll('.slider').forEach((slider) => {
-    const sliderImages = slider.querySelector('.slider-images');
-    const images = slider.querySelectorAll('.slider-images img');
-    const totalImages = images.length;
-    let currentIndex = 0;
-
-    const updateSlider = () => {
-      sliderImages.style.transform = `translateX(-${currentIndex * 100}%)`;
-    };
-
-    const nextImage = () => {
-      currentIndex = (currentIndex + 1) % totalImages;
-      updateSlider();
-    };
-
-    const prevImage = () => {
-      currentIndex = (currentIndex - 1 + totalImages) % totalImages;
-      updateSlider();
-    };
-
-    slider.querySelector('.slider-button.right').addEventListener('click', nextImage);
-    slider.querySelector('.slider-button.left').addEventListener('click', prevImage);
-  });
-
-  document.getElementById("resume-button-1").addEventListener("click", function (event) {
-    event.preventDefault(); 
-
-    const pdfUrl = this.href;
-
-    // Open the PDF in a new tab
-    window.open(pdfUrl, "_blank");
-
-    const a = document.createElement("a");
-    a.href = pdfUrl;
-    a.download = "NitaPankajChaudhari-Resume.pdf"; // Set download filename
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-});
-
-</script>
