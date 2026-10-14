@@ -1,367 +1,1217 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nita Chaudhari - Full Stack Developer</title>
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>Nita Chaudhari | Full-Stack Web Developer &amp; Digital Solutions</title>
+    <meta name="title" content="Nita Chaudhari | Full-Stack Web Developer &amp; Digital Solutions">
+    <meta name="description" content="Portfolio of Nita Chaudhari - Full-Stack Web Developer and Computer Engineering graduate. Specializing in high-performance business websites, full-stack web applications, responsive UI/UX, and technical SEO. Available for freelance projects and long-term client partnerships.">
+    <meta name="keywords" content="Nita Chaudhari, Full Stack Developer, Web Developer, Web Designer, Technical SEO, React Developer, Node.js, Express, MongoDB, B2B Website, Freelance Web Developer, Savda, Jalgaon, Maharashtra">
+    <meta name="author" content="Nita Chaudhari">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://nitachaudhariportfolio.netlify.app/">
+    
+    <!-- Theme & Mobile Browser Chrome -->
+    <meta name="theme-color" content="#2563eb" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0b1120" media="(prefers-color-scheme: dark)">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nitachaudhariportfolio.netlify.app/">
+    <meta property="og:title" content="Nita Chaudhari | Full-Stack Web Developer &amp; Digital Solutions">
+    <meta property="og:description" content="I build modern websites and practical digital solutions for businesses. Explore client projects, web applications, and web development services.">
+    <meta property="og:image" content="https://nitachaudhariportfolio.netlify.app/images/profile.jpeg">
+    <meta property="og:site_name" content="Nita Chaudhari Portfolio">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://nitachaudhariportfolio.netlify.app/">
+    <meta property="twitter:title" content="Nita Chaudhari | Full-Stack Web Developer &amp; Digital Solutions">
+    <meta property="twitter:description" content="I build modern websites and practical digital solutions for businesses. Explore client projects, web applications, and web development services.">
+    <meta property="twitter:image" content="https://nitachaudhariportfolio.netlify.app/images/profile.jpeg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    
+    <!-- Google Fonts & Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
+    <!-- JSON-LD Structured Data Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://nitachaudhariportfolio.netlify.app/#person",
+          "name": "Nita Chaudhari",
+          "alternateName": "Nita Pankaj Chaudhari",
+          "jobTitle": "Full-Stack Web Developer",
+          "description": "Full-Stack Web Developer with a Computer Engineering background specializing in modern business websites, web applications, and technical SEO.",
+          "url": "https://nitachaudhariportfolio.netlify.app/",
+          "image": "https://nitachaudhariportfolio.netlify.app/images/profile.jpeg",
+          "email": "mailto:nitachaudhari1997@gmail.com",
+          "telephone": "+918767281616",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Savda",
+            "addressRegion": "Maharashtra",
+            "addressCountry": "IN"
+          },
+          "alumniOf": [
+            {
+              "@type": "EducationalOrganization",
+              "name": "G.H. Raisoni Institute of Engineering and Management, Jalgaon"
+            },
+            {
+              "@type": "EducationalOrganization",
+              "name": "Masai School"
+            }
+          ],
+          "sameAs": [
+            "https://github.com/Nitachaudhari",
+            "https://www.linkedin.com/in/nita-chaudhari-a94038128/"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://nitachaudhariportfolio.netlify.app/#website",
+          "url": "https://nitachaudhariportfolio.netlify.app/",
+          "name": "Nita Chaudhari Portfolio",
+          "publisher": {
+            "@id": "https://nitachaudhariportfolio.netlify.app/#person"
+          }
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
-    <!-- Scroll Progress -->
-    <div class="progress-bar"></div>
+    <!-- Top Scroll Progress Bar -->
+    <div class="progress-bar" id="progress-bar" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
 
-    <!-- Navigation -->
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <h2>Nita<span>.dev</span></h2>
+    <!-- Navigation Header -->
+    <header class="header" id="header">
+        <nav class="navbar container" aria-label="Main Navigation">
+            <a href="#home" class="logo" aria-label="Nita Chaudhari Homepage">
+                <span class="logo-mark">N</span>
+                <span class="logo-text">Nita<span>.dev</span></span>
+            </a>
+            
+            <div class="nav-wrapper" id="nav-wrapper">
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#process" class="nav-link">Process</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
             </div>
-            <div class="nav-toggle" id="menu-icon">
-                <span></span>
-                <span></span>
-                <span></span>
+
+            <div class="nav-actions">
+                <!-- Theme Toggle Button -->
+                <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch to dark theme" title="Toggle theme">
+                    <i class="fas fa-moon" id="theme-icon"></i>
+                </button>
+                
+                <!-- Resume Download CTA -->
+                <a href="NitaPankajChaudhari-FullStackWebDeveloper-ubfK.pdf" class="btn btn-sm btn-outline resume-btn" id="resume-button" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-file-pdf"></i>
+                    <span>Resume</span>
+                </a>
+                
+                <!-- Mobile Navigation Toggle -->
+                <button type="button" class="nav-toggle" id="menu-icon" aria-label="Open mobile menu" aria-expanded="false" aria-controls="nav-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
-            <ul class="nav-menu" id="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-                <li><a href="NitaPankajChaudhari-FullStackWebDeveloper-ubfK.pdf" class="resume-btn" id="resume-button">
-                    <i class="fas fa-download"></i> Resume</a></li>
-            </ul>
         </nav>
     </header>
 
-    <!-- Hero -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <p class="greeting fade-in">Hello 👋, I'm</p>
-            <h1 class="name fade-in-up">Nita Pankaj Chaudhari</h1>
-            <h2 class="title fade-in-up">
-                <span id="typing-text"></span>
-                <span class="cursor-blink">|</span>
-            </h2>
-            <p class="description fade-in-up">Crafting digital experiences with modern web technologies</p>
-            <div class="hero-buttons fade-in-up">
-                <a href="#projects" class="btn btn-primary">View Projects</a>
-                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-            </div>
-        </div>
-        <div class="hero-image fade-in">
-            <div class="floating-shape shape-1"></div>
-            <div class="floating-shape shape-2"></div>
-            <div class="floating-shape shape-3"></div>
-            <img src="images/anim.gif" alt="Developer Animation">
-        </div>
-    </section>
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="pulse-dot"></span>
+                        <span>Available for Freelance &amp; Business Projects</span>
+                    </div>
 
-    <!-- About -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>A passionate and skilled <strong>Full-Stack Web Developer</strong> with expertise in HTML, CSS, JavaScript, React.js, Express.js, and Node.js, as well as proficiency in MongoDB and Firebase.</p>
-                    <p>Successfully completed a rigorous <strong>1000+ hour full-stack web development program</strong> at Masai School, which included in-depth training in Generative AI and Prompt Engineering.</p>
-                    <p>Gained hands-on experience through individual and collaborative projects, showcasing the ability to solve complex problems, build dynamic web applications, and deliver user-focused solutions.</p>
-                    <div class="stats">
-                        <div class="stat-item">
-                            <h3>10+</h3>
-                            <p>Projects Completed</p>
-                        </div>
-                        <div class="stat-item">
-                            <h3>1000+</h3>
-                            <p>Hours of Coding</p>
-                        </div>
-                        <div class="stat-item">
-                            <h3>15+</h3>
-                            <p>Technologies</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                    <h1 class="hero-title">
+                        I Build Modern Websites and Practical Digital Solutions for Businesses.
+                    </h1>
 
-    <!-- Skills -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968267.png" alt="HTML">
+                    <div class="hero-role-wrapper">
+                        <span class="role-prefix">I am a</span>
+                        <span class="typing-role" id="typing-text">Full-Stack Web Developer</span>
+                        <span class="cursor-blink" aria-hidden="true">|</span>
                     </div>
-                    <h3>HTML5</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 90%"></div>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS">
-                    </div>
-                    <h3>CSS3</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 85%"></div>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript">
-                    </div>
-                    <h3>JavaScript</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 80%"></div>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <img src="https://cdn-icons-png.flaticon.com/512/919/919851.png" alt="React">
-                    </div>
-                    <h3>React.js</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 75%"></div>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <img src="https://cdn-icons-png.flaticon.com/512/919/919825.png" alt="Node">
-                    </div>
-                    <h3>Node.js</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 70%"></div>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <img src="https://cdn-icons-png.flaticon.com/512/919/919836.png" alt="MongoDB">
-                    </div>
-                    <h3>MongoDB</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 75%"></div>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968342.png" alt="Python">
-                    </div>
-                    <h3>Python</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 65%"></div>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111288.png" alt="GitHub">
-                    </div>
-                    <h3>GitHub</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 80%"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Projects -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/project1/home.png" alt="Bean & Bite Cafe">
-                        <div class="project-overlay">
-                            <a href="https://github.com/Aranv-viswas/AI-Athletes_012" class="project-link" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://bean-and-bite.netlify.app/" class="project-link" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
+                    <p class="hero-description">
+                        Computer Engineering graduate crafting responsive, high-speed websites, custom web applications, and SEO-optimized digital platforms designed to strengthen credibility and turn visitors into paying clients.
+                    </p>
+
+                    <div class="hero-ctas">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View My Projects</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Let's Talk</span>
+                        </a>
+                        <a href="#services" class="btn btn-ghost">
+                            <span>Explore Services</span>
+                        </a>
                     </div>
-                    <div class="project-info">
-                        <h3>Bean & Bite Café</h3>
-                        <p>A modern café website with glassmorphism effects, animations, and responsive design</p>
-                        <div class="project-tech">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                        </div>
+
+                    <!-- Core Competency Tags -->
+                    <div class="hero-tags" aria-label="Core Technical Focus">
+                        <span class="tag-item"><i class="fas fa-check-circle"></i> B2B Business Sites</span>
+                        <span class="tag-item"><i class="fas fa-check-circle"></i> Full-Stack MERN Apps</span>
+                        <span class="tag-item"><i class="fas fa-check-circle"></i> Technical SEO</span>
+                        <span class="tag-item"><i class="fas fa-check-circle"></i> Mobile-First UX</span>
                     </div>
                 </div>
 
-                <!-- Project 2 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/project2/home.png" alt="Whiteboard App">
-                        <div class="project-overlay">
-                            <a href="https://github.com/Sharwan-Kumar-29/Quantum-Visionaries_002" class="project-link" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://quantum-visionaries-002.netlify.app" class="project-link" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
+                <!-- Hero Visual Showcase -->
+                <div class="hero-visual">
+                    <div class="visual-card">
+                        <div class="code-window">
+                            <div class="window-header">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                                <span class="window-title">nita-chaudhari.config.js</span>
+                            </div>
+                            <div class="code-body">
+<pre><code><span class="code-keyword">const</span> <span class="code-var">developer</span> = {
+  <span class="code-prop">name</span>: <span class="code-str">"Nita Chaudhari"</span>,
+  <span class="code-prop">role</span>: <span class="code-str">"Full-Stack Web Developer"</span>,
+  <span class="code-prop">degree</span>: <span class="code-str">"Computer Science &amp; Engg"</span>,
+  <span class="code-prop">focus</span>: [
+    <span class="code-str">"High-Converting Websites"</span>,
+    <span class="code-str">"Scalable Web Apps"</span>,
+    <span class="code-str">"Technical SEO Optimization"</span>
+  ],
+  <span class="code-prop">agencyVision</span>: <span class="code-bool">true</span>,
+  <span class="code-prop">status</span>: <span class="code-str">"Ready for New Clients"</span>
+};</code></pre>
+                            </div>
                         </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Whiteboard Application</h3>
-                        <p>Interactive drawing app with Firebase integration for saving creations</p>
-                        <div class="project-tech">
-                            <span>HTML</span>
-                            <span>Canvas</span>
-                            <span>Firebase</span>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Project 3 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/project3/home.png" alt="Nykaa Clone">
-                        <div class="project-overlay">
-                            <a href="https://github.com/DeeproChakraborty1/Fontend_Flames" class="project-link" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://spiffy-licorice-b2ff6c.netlify.app/" class="project-link" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
+                        <!-- Floating Stat Badge 1 -->
+                        <div class="floating-badge badge-top-right">
+                            <div class="badge-icon"><i class="fas fa-globe"></i></div>
+                            <div class="badge-text">
+                                <strong>B2B &amp; Web Apps</strong>
+                                <span>Real Production Deployments</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Nykaa Clone</h3>
-                        <p>E-commerce platform clone with sorting, filtering, and product management</p>
-                        <div class="project-tech">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                            <span>JSON</span>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Project 4 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/project4/home.png" alt="Fitness Buddy">
-                        <div class="project-overlay">
-                            <a href="https://github.com/Nitachaudhari/Fitness_Buddy" class="project-link" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://fitnessbuddy1.netlify.app/" class="project-link" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Fitness Buddy</h3>
-                        <p>Community-driven fitness app to find workout buddies and track progress</p>
-                        <div class="project-tech">
-                            <span>React</span>
-                            <span>Firebase</span>
-                            <span>Chakra UI</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 5 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/project5/home.png" alt="Kids Learning">
-                        <div class="project-overlay">
-                            <a href="https://github.com/Nitachaudhari/KidsWebpage" class="project-link" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://rainbow-narwhal-c4185a.netlify.app/" class="project-link" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Kids E-Learning</h3>
-                        <p>Interactive educational website for kids with games and animations</p>
-                        <div class="project-tech">
-                            <span>React</span>
-                            <span>CSS</span>
-                            <span>Lucide Icons</span>
+                        <!-- Floating Stat Badge 2 -->
+                        <div class="floating-badge badge-bottom-left">
+                            <div class="badge-icon"><i class="fas fa-bolt"></i></div>
+                            <div class="badge-text">
+                                <strong>High Performance</strong>
+                                <span>SEO &amp; Speed Optimized</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- GitHub Stats -->
-    <section class="github-stats">
-        <div class="container">
-            <h2 class="section-title">GitHub Statistics</h2>
-            <div class="stats-container">
-                <img src="https://ghchart.rshah.org/4facfe/Nitachaudhari" alt="GitHub Calendar" class="github-calendar">
-                <img src="https://github-readme-streak-stats.herokuapp.com?user=Nitachaudhari&theme=tokyonight&border_radius=10" alt="GitHub Streak" class="github-streak">
-            </div>
-        </div>
-    </section>
+        <!-- About Me Section -->
+        <section id="about" class="about section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Professional Background</span>
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-desc">Engineering foundation combined with a passion for web development and digital business solutions.</p>
+                </div>
 
-    <!-- Contact -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="contact-subtitle">Let's discuss your next project</p>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fab fa-github"></i>
+                <div class="about-grid">
+                    <div class="about-card-profile">
+                        <div class="profile-image-wrapper">
+                            <img src="images/profile.jpeg" alt="Nita Chaudhari - Full-Stack Web Developer" class="profile-img" width="300" height="360" loading="lazy">
+                            <div class="profile-badge">
+                                <i class="fas fa-shield-halved"></i>
+                                <span>Verified Developer</span>
+                            </div>
                         </div>
-                        <div class="contact-text">
-                            <h3>GitHub</h3>
-                            <a href="https://github.com/Nitachaudhari" target="_blank">@Nitachaudhari</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fab fa-linkedin"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h3>LinkedIn</h3>
-                            <a href="https://www.linkedin.com/in/nita-chaudhari-a94038128/" target="_blank">Nita Chaudhari</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h3>Email</h3>
-                            <a href="mailto:nitachaudhari1997@gmail.com">nitachaudhari1997@gmail.com</a>
+                        <div class="profile-meta">
+                            <h3 class="profile-name">Nita Chaudhari</h3>
+                            <p class="profile-title">Computer Engineering Graduate &amp; Web Developer</p>
+                            <div class="profile-details">
+                                <div class="detail-row">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Savda / Jalgaon, Maharashtra (Remote Worldwide)</span>
+                                </div>
+                                <div class="detail-row">
+                                    <i class="fas fa-graduation-cap"></i>
+                                    <span>B.E. Computer Science &amp; Engineering</span>
+                                </div>
+                                <div class="detail-row">
+                                    <i class="fas fa-code"></i>
+                                    <span>Masai School 1000+ Hrs Full-Stack Alum</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
+
+                    <div class="about-story">
+                        <div class="story-block">
+                            <h3 class="story-heading">
+                                <i class="fas fa-laptop-code"></i>
+                                <span>From Engineering Principles to Practical Web Solutions</span>
+                            </h3>
+                            <p>
+                                With a solid academic foundation in <strong>Computer Science &amp; Engineering</strong> from G.H. Raisoni Institute of Engineering and Management and over <strong>1000+ hours of rigorous full-stack development</strong> at Masai School, I build websites and web applications that solve real-world operational problems.
+                            </p>
+                            <p>
+                                I don't just write code; I look at web technology through a commercial lens. Whether building an export-ready B2B corporate website like <strong>IMM Food Innovators LLP</strong> or engineering data-driven platforms like an <strong>Assessment Evaluation System</strong>, my priority is clean architecture, responsiveness, and seamless user experiences.
+                            </p>
                         </div>
-                        <div class="contact-text">
-                            <h3>Phone</h3>
-                            <a href="tel:+918767281616">+91 8767281616</a>
+
+                        <div class="story-block">
+                            <h3 class="story-heading">
+                                <i class="fas fa-chart-line"></i>
+                                <span>My Long-Term Vision: Building a Full-Service Digital Agency</span>
+                            </h3>
+                            <p>
+                                My long-term goal is to establish a sustainable <strong>digital agency</strong> dedicated to helping small businesses, startups, and enterprises establish authority online through modern web design, custom software tools, and technical SEO.
+                            </p>
+                            <p>
+                                I am actively taking on freelance projects, remote web development contracts, and long-term client engagements where I can deliver measurable value and reliable technical execution.
+                            </p>
+                        </div>
+
+                        <!-- Highlights Numbers -->
+                        <div class="about-stats-grid">
+                            <div class="stat-box">
+                                <span class="stat-number">10+</span>
+                                <span class="stat-label">Web Projects Completed</span>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-number">1000+</span>
+                                <span class="stat-label">Practical Coding Hours</span>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">Responsive &amp; Mobile-First</span>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-number">Verified</span>
+                                <span class="stat-label">B2B Production Deployments</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">What I Offer</span>
+                    <h2 class="section-title">Web &amp; Digital Services for Businesses</h2>
+                    <p class="section-desc">Tailored web development services designed to establish your brand, engage customers, and solve real business needs.</p>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-building"></i></div>
+                        <h3 class="service-title">Business Website Development</h3>
+                        <p class="service-text">
+                            Custom multi-page corporate and commercial websites tailored to communicate your value proposition, build client trust, and drive inquiries.
+                        </p>
+                        <ul class="service-list">
+                            <li><i class="fas fa-check"></i> Clean, professional branding</li>
+                            <li><i class="fas fa-check"></i> Lead generation &amp; inquiry points</li>
+                            <li><i class="fas fa-check"></i> Modular &amp; scalable structure</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-mobile-screen"></i></div>
+                        <h3 class="service-title">Responsive Web Design &amp; UI/UX</h3>
+                        <p class="service-text">
+                            Mobile-first interface design that adapts seamlessly across smartphones, tablets, laptops, and ultra-wide desktop monitors.
+                        </p>
+                        <ul class="service-list">
+                            <li><i class="fas fa-check"></i> Touch-friendly navigation</li>
+                            <li><i class="fas fa-check"></i> Modern typography &amp; hierarchy</li>
+                            <li><i class="fas fa-check"></i> Cross-browser consistency</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-rocket"></i></div>
+                        <h3 class="service-title">High-Converting Landing Pages</h3>
+                        <p class="service-text">
+                            Targeted, high-speed single-page sites built specifically for product launches, marketing promotions, or special service offerings.
+                        </p>
+                        <ul class="service-list">
+                            <li><i class="fas fa-check"></i> Compelling CTA placements</li>
+                            <li><i class="fas fa-check"></i> Sub-second initial load speeds</li>
+                            <li><i class="fas fa-check"></i> Validated contact touchpoints</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-wand-magic-sparkles"></i></div>
+                        <h3 class="service-title">Website Redesign &amp; Modernization</h3>
+                        <p class="service-text">
+                            Upgrading outdated, slow, or cluttered websites into sleek, modern, and accessible digital assets that represent your current brand.
+                        </p>
+                        <ul class="service-list">
+                            <li><i class="fas fa-check"></i> Modern CSS &amp; layout upgrade</li>
+                            <li><i class="fas fa-check"></i> Code refactoring &amp; decluttering</li>
+                            <li><i class="fas fa-check"></i> Improved user engagement flows</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 5 -->
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-magnifying-glass-chart"></i></div>
+                        <h3 class="service-title">Technical SEO &amp; On-Page Optimization</h3>
+                        <p class="service-text">
+                            Architecting your site so search engine crawlers can efficiently discover, parse, and index your business content.
+                        </p>
+                        <ul class="service-list">
+                            <li><i class="fas fa-check"></i> Semantic HTML5 &amp; heading tags</li>
+                            <li><i class="fas fa-check"></i> Schema.org JSON-LD structured data</li>
+                            <li><i class="fas fa-check"></i> Open Graph &amp; Twitter social cards</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 6 -->
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-gauge-high"></i></div>
+                        <h3 class="service-title">Performance &amp; Core Web Vitals</h3>
+                        <p class="service-text">
+                            Optimizing assets, scripts, and layout shifts to deliver lightning-fast loading speeds, reducing visitor bounce rates.
+                        </p>
+                        <ul class="service-list">
+                            <li><i class="fas fa-check"></i> Image optimization &amp; lazy loading</li>
+                            <li><i class="fas fa-check"></i> CSS &amp; script minification</li>
+                            <li><i class="fas fa-check"></i> Clean, zero-bloat code</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 7 -->
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-code"></i></div>
+                        <h3 class="service-title">Custom Web Application Development</h3>
+                        <p class="service-text">
+                            Building functional web applications, internal tools, test systems, and business dashboards powered by modern JavaScript frameworks.
+                        </p>
+                        <ul class="service-list">
+                            <li><i class="fas fa-check"></i> React.js frontend architecture</li>
+                            <li><i class="fas fa-check"></i> Node.js &amp; Express API backends</li>
+                            <li><i class="fas fa-check"></i> Database integration (MongoDB/SQLite)</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 8 -->
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-cloud-arrow-up"></i></div>
+                        <h3 class="service-title">Deployment, Domain &amp; Maintenance</h3>
+                        <p class="service-text">
+                            End-to-end launch services ensuring your website is securely hosted, properly connected to your domain, and continuously maintained.
+                        </p>
+                        <ul class="service-list">
+                            <li><i class="fas fa-check"></i> Netlify, GitHub Pages, or Cloud setup</li>
+                            <li><i class="fas fa-check"></i> Free SSL certificate configuration</li>
+                            <li><i class="fas fa-check"></i> Reliable ongoing technical support</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Section -->
+        <section id="projects" class="projects section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Portfolio Showcase</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-desc">Verified real-world client websites, full-stack applications, and technical software implementations.</p>
+                </div>
+
+                <!-- Project Filters -->
+                <div class="project-filters" role="tablist" aria-label="Project Categories">
+                    <button type="button" class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Projects</button>
+                    <button type="button" class="filter-btn" data-filter="client" role="tab" aria-selected="false">Client &amp; Business</button>
+                    <button type="button" class="filter-btn" data-filter="fullstack" role="tab" aria-selected="false">Full-Stack Apps</button>
+                    <button type="button" class="filter-btn" data-filter="frontend" role="tab" aria-selected="false">Frontend &amp; UI</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid" id="projects-grid">
+                    
+                    <!-- Project 1: IMM Food Innovators LLP (Real Client B2B Website) -->
+                    <article class="project-card" data-category="client">
+                        <div class="project-media">
+                            <img src="images/project-immfood.webp" alt="IMM Food Innovators LLP Website" class="project-img" loading="lazy">
+                            <div class="project-badge client-badge"><i class="fas fa-briefcase"></i> Client Project</div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-category">B2B Manufacturing Website &amp; Technical SEO</div>
+                            <h3 class="project-title">IMM Food Innovators LLP</h3>
+                            <p class="project-desc">
+                                A comprehensive commercial B2B website built for an export-ready food ingredient and dehydrated powder manufacturing company in Maharashtra. Features structured product catalogs, corporate inquiry touchpoints, and extensive technical SEO with Schema.org JSON-LD metadata.
+                            </p>
+                            <div class="project-highlights">
+                                <strong>Key Features:</strong> B2B Product Categories, ISO &amp; FSSAI showcase, Schema Corporation markup, Inquiry forms, Mobile responsive.
+                            </div>
+                            <div class="project-tech-tags">
+                                <span>HTML5</span>
+                                <span>Modular CSS</span>
+                                <span>JavaScript</span>
+                                <span>JSON-LD Schema</span>
+                                <span>B2B SEO</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://immfoodinnovators.in/" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-arrow-up-right-from-square"></i>
+                                    <span>Live Website</span>
+                                </a>
+                                <a href="https://github.com/Nitachaudhari/IMM-Food-Innovators" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-github"></i>
+                                    <span>Repository</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: Psychometric Assessment Platform (Full-Stack) -->
+                    <article class="project-card" data-category="fullstack">
+                        <div class="project-media">
+                            <img src="images/project-psychometric.jpg" alt="Psychometric Assessment Platform" class="project-img" loading="lazy">
+                            <div class="project-badge fullstack-badge"><i class="fas fa-layer-group"></i> Full-Stack App</div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-category">Psychological Assessment &amp; Evaluation System</div>
+                            <h3 class="project-title">Psychometric Test System</h3>
+                            <p class="project-desc">
+                                A web application engineered to support psychological assessments, candidate evaluation, and automated test-result scoring across 41 psychometric evaluations. Integrates client-side test flow with Express.js and SQLite3 database persistence.
+                            </p>
+                            <div class="project-highlights">
+                                <strong>Key Features:</strong> Assessment test-taking runner, automated scoring algorithms, SQLite test database, React Hook Form + Zod validation, responsive dashboard.
+                            </div>
+                            <div class="project-tech-tags">
+                                <span>React 19</span>
+                                <span>Tailwind CSS</span>
+                                <span>Node.js</span>
+                                <span>Express.js</span>
+                                <span>SQLite3</span>
+                                <span>Vite</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://github.com/Nitachaudhari/psychometric-ai" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-github"></i>
+                                    <span>View Source Code</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: Smart Inventory Management System -->
+                    <article class="project-card" data-category="fullstack">
+                        <div class="project-media">
+                            <img src="images/project-smartinventory.png" alt="Smart Inventory System" class="project-img" loading="lazy">
+                            <div class="project-badge fullstack-badge"><i class="fas fa-boxes-stacked"></i> Business System</div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-category">Inventory Tracking &amp; Stock Optimization</div>
+                            <h3 class="project-title">Smart Inventory System</h3>
+                            <p class="project-desc">
+                                A complete inventory management web platform built to help businesses track stock movements, prevent shortages or overstocking, and organize items across categorized warehouse registries with real-time updates.
+                            </p>
+                            <div class="project-highlights">
+                                <strong>Key Features:</strong> Secure user authentication, live inventory tracking, category search &amp; filtering, item management CRUD dashboard.
+                            </div>
+                            <div class="project-tech-tags">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>Express.js</span>
+                                <span>MongoDB</span>
+                                <span>RESTful API</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://smartinventory1.netlify.app/" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-arrow-up-right-from-square"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                                <a href="https://github.com/Nitachaudhari/smartInventory" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-github"></i>
+                                    <span>Repository</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4: Fitness Buddy Platform -->
+                    <article class="project-card" data-category="fullstack">
+                        <div class="project-media">
+                            <img src="images/project4/home.png" alt="Fitness Buddy Application" class="project-img" loading="lazy">
+                            <div class="project-badge"><i class="fas fa-users"></i> Community Web App</div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-category">Social Fitness &amp; Workout Matching</div>
+                            <h3 class="project-title">Fitness Buddy Platform</h3>
+                            <p class="project-desc">
+                                A community-driven fitness and workout tracking web application allowing health enthusiasts to find workout partners with matching fitness goals, track training milestones, and share progress.
+                            </p>
+                            <div class="project-highlights">
+                                <strong>Key Features:</strong> Partner matching algorithm, exercise tracking, Firebase real-time database, responsive UI with Chakra UI.
+                            </div>
+                            <div class="project-tech-tags">
+                                <span>React</span>
+                                <span>Firebase</span>
+                                <span>Chakra UI</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://fitnessbuddy1.netlify.app/" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-arrow-up-right-from-square"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                                <a href="https://github.com/Nitachaudhari/Fitness_Buddy" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-github"></i>
+                                    <span>Repository</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 5: Kids E-Learning Platform -->
+                    <article class="project-card" data-category="frontend">
+                        <div class="project-media">
+                            <img src="images/project5/home.png" alt="Kids E-Learning Platform" class="project-img" loading="lazy">
+                            <div class="project-badge"><i class="fas fa-graduation-cap"></i> Interactive EdTech</div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-category">Educational Interactive Web Application</div>
+                            <h3 class="project-title">Kids Interactive E-Learning</h3>
+                            <p class="project-desc">
+                                An engaging and intuitive e-learning web platform for young children, featuring gamified alphabet lessons, visual puzzles, audio-visual feedback, and responsive animations designed for high retention.
+                            </p>
+                            <div class="project-highlights">
+                                <strong>Key Features:</strong> Gamified alphabet modules, fruit &amp; star matching games, smooth micro-interactions, child-friendly color themes.
+                            </div>
+                            <div class="project-tech-tags">
+                                <span>React</span>
+                                <span>CSS Modules</span>
+                                <span>Lucide Icons</span>
+                                <span>Web Audio API</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://rainbow-narwhal-c4185a.netlify.app/" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-arrow-up-right-from-square"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                                <a href="https://github.com/Nitachaudhari/KidsWebpage" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-github"></i>
+                                    <span>Repository</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 6: Bean & Bite Café -->
+                    <article class="project-card" data-category="client">
+                        <div class="project-media">
+                            <img src="images/project1/home.png" alt="Bean &amp; Bite Cafe Website" class="project-img" loading="lazy">
+                            <div class="project-badge"><i class="fas fa-mug-hot"></i> Commercial F&amp;B Site</div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-category">Hospitality &amp; Restaurant Showcase</div>
+                            <h3 class="project-title">Bean &amp; Bite Café</h3>
+                            <p class="project-desc">
+                                A modern café and restaurant showcase website crafted with sleek glassmorphism visuals, smooth transitions, interactive menu categories, and a customer testimonial slider.
+                            </p>
+                            <div class="project-highlights">
+                                <strong>Key Features:</strong> Interactive menu filters, testimonial slider, glassmorphic layout, fully responsive mobile styling.
+                            </div>
+                            <div class="project-tech-tags">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>Responsive UI</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://bean-and-bite.netlify.app/" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-arrow-up-right-from-square"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                                <a href="https://github.com/Aranv-viswas/AI-Athletes_012" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-github"></i>
+                                    <span>Repository</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 7: Whiteboard Visionary App -->
+                    <article class="project-card" data-category="frontend">
+                        <div class="project-media">
+                            <img src="images/project2/home.png" alt="Whiteboard Visionary Application" class="project-img" loading="lazy">
+                            <div class="project-badge"><i class="fas fa-palette"></i> Canvas App</div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-category">Collaborative Canvas &amp; Drawing Web App</div>
+                            <h3 class="project-title">Whiteboard Visionary</h3>
+                            <p class="project-desc">
+                                An interactive drawing and sketching web application featuring HTML5 Canvas tools, customizable pencil and color pickers, and cloud synchronization for saving creative sketches.
+                            </p>
+                            <div class="project-highlights">
+                                <strong>Key Features:</strong> HTML5 Canvas drawing engine, stroke width &amp; color selection, undo/clear features, Firebase integration.
+                            </div>
+                            <div class="project-tech-tags">
+                                <span>HTML5 Canvas</span>
+                                <span>JavaScript</span>
+                                <span>CSS3</span>
+                                <span>Firebase</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://quantum-visionaries-002.netlify.app" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-arrow-up-right-from-square"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                                <a href="https://github.com/Sharwan-Kumar-29/Quantum-Visionaries_002" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-github"></i>
+                                    <span>Repository</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 8: Personal Portfolio & Brand Platform -->
+                    <article class="project-card" data-category="client">
+                        <div class="project-media">
+                            <div class="portfolio-preview-box">
+                                <i class="fas fa-code-merge"></i>
+                                <span>Nitachaudhari.github.io</span>
+                            </div>
+                            <div class="project-badge"><i class="fas fa-star"></i> Personal Brand</div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-category">Web Architecture &amp; Technical SEO Platform</div>
+                            <h3 class="project-title">Personal Portfolio Platform</h3>
+                            <p class="project-desc">
+                                This portfolio itself, engineered with pure semantic HTML5, modern CSS design tokens, and lightweight JavaScript. Features dark/light mode, structured SEO JSON-LD schema, Netlify Forms validation, and high performance.
+                            </p>
+                            <div class="project-highlights">
+                                <strong>Key Features:</strong> Custom theme engine, Netlify Forms integration, zero heavy runtime dependencies, 100% Core Web Vitals readiness.
+                            </div>
+                            <div class="project-tech-tags">
+                                <span>Vanilla HTML5</span>
+                                <span>Modern CSS</span>
+                                <span>JavaScript</span>
+                                <span>SEO Schema</span>
+                                <span>Netlify</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://nitachaudhariportfolio.netlify.app/" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-arrow-up-right-from-square"></i>
+                                    <span>Live Site</span>
+                                </a>
+                                <a href="https://github.com/Nitachaudhari/Nitachaudhari.github.io" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-github"></i>
+                                    <span>Repository</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Process Section -->
+        <section id="process" class="process section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Collaborative Workflow</span>
+                    <h2 class="section-title">My Project Work Process</h2>
+                    <p class="section-desc">A structured, transparent 6-step approach to take your web project from initial concept to a successful, reliable launch.</p>
+                </div>
+
+                <div class="process-timeline">
+                    <!-- Step 1 -->
+                    <div class="process-card">
+                        <div class="process-step-num">01</div>
+                        <div class="process-icon"><i class="fas fa-comments"></i></div>
+                        <h3 class="process-card-title">Understand Requirements</h3>
+                        <p class="process-card-desc">
+                            We discuss your business goals, target audience, preferred aesthetics, and functional requirements to establish a clear project scope.
+                        </p>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="process-card">
+                        <div class="process-step-num">02</div>
+                        <div class="process-icon"><i class="fas fa-sitemap"></i></div>
+                        <h3 class="process-card-title">Plan Structure &amp; Design</h3>
+                        <p class="process-card-desc">
+                            Organizing page layout, user journeys, navigation flow, and design tokens to ensure an intuitive and aesthetically pleasing interface.
+                        </p>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="process-card">
+                        <div class="process-step-num">03</div>
+                        <div class="process-icon"><i class="fas fa-code"></i></div>
+                        <h3 class="process-card-title">Develop the Website</h3>
+                        <p class="process-card-desc">
+                            Writing clean, semantic, standards-compliant code with modern CSS and modular JavaScript, implementing all interactive features and content.
+                        </p>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="process-card">
+                        <div class="process-step-num">04</div>
+                        <div class="process-icon"><i class="fas fa-vial-circle-check"></i></div>
+                        <h3 class="process-card-title">Test Responsiveness &amp; Functionality</h3>
+                        <p class="process-card-desc">
+                            Rigorous cross-device testing across smartphones, tablets, and desktops. Checking form validation, link integrity, and load speeds.
+                        </p>
+                    </div>
+
+                    <!-- Step 5 -->
+                    <div class="process-card">
+                        <div class="process-step-num">05</div>
+                        <div class="process-icon"><i class="fas fa-cloud-arrow-up"></i></div>
+                        <h3 class="process-card-title">Deploy the Website</h3>
+                        <p class="process-card-desc">
+                            Production deployment on Netlify or client hosting, SSL certificate activation, custom domain routing, and basic SEO submission.
+                        </p>
+                    </div>
+
+                    <!-- Step 6 -->
+                    <div class="process-card">
+                        <div class="process-step-num">06</div>
+                        <div class="process-icon"><i class="fas fa-handshake-angle"></i></div>
+                        <h3 class="process-card-title">Maintenance &amp; Support</h3>
+                        <p class="process-card-desc">
+                            Providing agreed post-launch technical support, minor updates, performance checks, and building long-term working relationships.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section id="skills" class="skills section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Technical Expertise</span>
+                    <h2 class="section-title">Skills &amp; Technologies</h2>
+                    <p class="section-desc">Practical technologies verified through hands-on full-stack development, client projects, and academic engineering.</p>
+                </div>
+
+                <div class="skills-categories-grid">
+                    <!-- Category 1: Frontend Development -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <div class="category-icon"><i class="fab fa-html5"></i></div>
+                            <h3 class="category-title">Frontend Development</h3>
+                        </div>
+                        <div class="skills-pills">
+                            <span class="skill-pill"><i class="fab fa-html5"></i> HTML5 (Semantic)</span>
+                            <span class="skill-pill"><i class="fab fa-css3-alt"></i> CSS3 &amp; Flexbox/Grid</span>
+                            <span class="skill-pill"><i class="fab fa-js"></i> JavaScript (ES6+)</span>
+                            <span class="skill-pill"><i class="fab fa-react"></i> React.js</span>
+                            <span class="skill-pill"><i class="fas fa-wind"></i> Tailwind CSS</span>
+                            <span class="skill-pill"><i class="fas fa-mobile-screen"></i> Responsive UI Design</span>
+                            <span class="skill-pill"><i class="fas fa-cubes"></i> Component Architecture</span>
+                        </div>
+                    </div>
+
+                    <!-- Category 2: Backend Development -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <div class="category-icon"><i class="fab fa-node-js"></i></div>
+                            <h3 class="category-title">Backend Development</h3>
+                        </div>
+                        <div class="skills-pills">
+                            <span class="skill-pill"><i class="fab fa-node"></i> Node.js</span>
+                            <span class="skill-pill"><i class="fas fa-server"></i> Express.js</span>
+                            <span class="skill-pill"><i class="fas fa-network-wired"></i> RESTful APIs</span>
+                            <span class="skill-pill"><i class="fas fa-key"></i> User Authentication</span>
+                            <span class="skill-pill"><i class="fas fa-shield-alt"></i> CORS &amp; API Security</span>
+                            <span class="skill-pill"><i class="fas fa-database"></i> CRUD Operations</span>
+                        </div>
+                    </div>
+
+                    <!-- Category 3: Databases -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <div class="category-icon"><i class="fas fa-database"></i></div>
+                            <h3 class="category-title">Databases &amp; Storage</h3>
+                        </div>
+                        <div class="skills-pills">
+                            <span class="skill-pill"><i class="fas fa-leaf"></i> MongoDB</span>
+                            <span class="skill-pill"><i class="fas fa-database"></i> SQLite3</span>
+                            <span class="skill-pill"><i class="fas fa-fire"></i> Firebase Firestore</span>
+                            <span class="skill-pill"><i class="fas fa-code"></i> JSON Data Modeling</span>
+                        </div>
+                    </div>
+
+                    <!-- Category 4: Deployment & Hosting -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <div class="category-icon"><i class="fas fa-cloud"></i></div>
+                            <h3 class="category-title">Deployment &amp; Hosting</h3>
+                        </div>
+                        <div class="skills-pills">
+                            <span class="skill-pill"><i class="fas fa-bolt"></i> Netlify</span>
+                            <span class="skill-pill"><i class="fab fa-github"></i> GitHub Pages</span>
+                            <span class="skill-pill"><i class="fas fa-server"></i> Render</span>
+                            <span class="skill-pill"><i class="fab fa-git-alt"></i> Git Version Control</span>
+                            <span class="skill-pill"><i class="fas fa-globe"></i> Custom Domain &amp; DNS</span>
+                        </div>
+                    </div>
+
+                    <!-- Category 5: SEO & Website Optimization -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <div class="category-icon"><i class="fas fa-chart-line"></i></div>
+                            <h3 class="category-title">SEO &amp; Optimization</h3>
+                        </div>
+                        <div class="skills-pills">
+                            <span class="skill-pill"><i class="fas fa-search"></i> On-Page Technical SEO</span>
+                            <span class="skill-pill"><i class="fas fa-tags"></i> Meta Tags &amp; Open Graph</span>
+                            <span class="skill-pill"><i class="fas fa-code"></i> JSON-LD Schema.org</span>
+                            <span class="skill-pill"><i class="fas fa-gauge-high"></i> Core Web Vitals</span>
+                            <span class="skill-pill"><i class="fas fa-image"></i> Asset Compression</span>
+                            <span class="skill-pill"><i class="fas fa-universal-access"></i> Web Accessibility</span>
+                        </div>
+                    </div>
+
+                    <!-- Category 6: Tools & Workflow -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <div class="category-icon"><i class="fas fa-toolbox"></i></div>
+                            <h3 class="category-title">Workflow &amp; Digital Tools</h3>
+                        </div>
+                        <div class="skills-pills">
+                            <span class="skill-pill"><i class="fab fa-figma"></i> Figma (UI Wireframes)</span>
+                            <span class="skill-pill"><i class="fas fa-terminal"></i> VS Code &amp; DevTools</span>
+                            <span class="skill-pill"><i class="fas fa-brain"></i> Generative AI &amp; Prompting</span>
+                            <span class="skill-pill"><i class="fab fa-npm"></i> npm &amp; Vite Tooling</span>
+                            <span class="skill-pill"><i class="fas fa-magnifying-glass"></i> Google Search Console</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Education Section -->
+        <section id="experience" class="experience section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Verified History</span>
+                    <h2 class="section-title">Education &amp; Experience</h2>
+                    <p class="section-desc">Academic engineering credentials and practical hands-on software development milestones.</p>
+                </div>
+
+                <div class="experience-grid">
+                    <!-- Column 1: Education & Training -->
+                    <div class="timeline-column">
+                        <h3 class="column-title"><i class="fas fa-graduation-cap"></i> Education &amp; Training</h3>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">June 2024 - Present</div>
+                            <h4 class="timeline-role">Full-Stack Web Development Program</h4>
+                            <div class="timeline-org">Masai School, Bengaluru</div>
+                            <p class="timeline-desc">
+                                Completed intensive 1000+ hour practical full-stack software curriculum focusing on MERN stack, data structures, algorithms, collaborative Git projects, RESTful API architecture, and modern Generative AI tooling.
+                            </p>
+                            <div class="timeline-tags">
+                                <span>1000+ Hours</span>
+                                <span>MERN Stack</span>
+                                <span>Construct Week Projects</span>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">July 2015 - August 2018</div>
+                            <h4 class="timeline-role">Computer Science &amp; Engineering</h4>
+                            <div class="timeline-org">G.H. Raisoni Institute of Engineering &amp; Management, Jalgaon</div>
+                            <p class="timeline-desc">
+                                Core degree in Computer Science &amp; Engineering. Built foundation in software design principles, algorithms, relational databases, operating systems, and analytical problem-solving.
+                            </p>
+                            <div class="timeline-tags">
+                                <span>Computer Engineering</span>
+                                <span>Algorithms</span>
+                                <span>Software Design</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Practical Experience & Achievements -->
+                    <div class="timeline-column">
+                        <h3 class="column-title"><i class="fas fa-briefcase"></i> Practical Work &amp; Achievements</h3>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2024 - Present</div>
+                            <h4 class="timeline-role">Freelance Web Developer &amp; Client Projects</h4>
+                            <div class="timeline-org">Independent / Client Engagements</div>
+                            <p class="timeline-desc">
+                                Designed and developed live B2B client website for <strong>IMM Food Innovators LLP</strong>, implementing product showcases, contact systems, and schema-driven SEO. Developed full-stack inventory and psychological assessment systems.
+                            </p>
+                            <div class="timeline-tags">
+                                <span>Client Deployments</span>
+                                <span>Technical SEO</span>
+                                <span>B2B Solutions</span>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">Verified Credentials</div>
+                            <h4 class="timeline-role">Certifications &amp; Milestones</h4>
+                            <div class="timeline-org">Masai School &amp; Technical Programs</div>
+                            <p class="timeline-desc">
+                                Awarded Construct Week Project Completion Certificates for delivering full-featured software products under tight sprint deadlines. Participated in structured communication and collaborative engineering challenges.
+                            </p>
+                            <div class="timeline-tags">
+                                <span>Construct Week Certified</span>
+                                <span>Team Collaboration</span>
+                                <span>Deadline Delivery</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Get In Touch</span>
+                    <h2 class="section-title">Let's Discuss Your Project</h2>
+                    <p class="section-desc">Have a website requirement, need a custom web application, or looking for a developer? Send a message and let's make it happen.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Left: Contact Information -->
+                    <div class="contact-info-panel">
+                        <h3 class="panel-title">Direct Contact Information</h3>
+                        <p class="panel-desc">
+                            Feel free to reach out directly via email, phone, or LinkedIn. I am always open to discussing new business websites, technical collaborations, and freelance opportunities.
+                        </p>
+
+                        <div class="contact-methods">
+                            <!-- Email -->
+                            <div class="contact-method-card">
+                                <div class="method-icon"><i class="fas fa-envelope"></i></div>
+                                <div class="method-body">
+                                    <span class="method-label">Email</span>
+                                    <a href="mailto:nitachaudhari1997@gmail.com" class="method-val">nitachaudhari1997@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <!-- Phone -->
+                            <div class="contact-method-card">
+                                <div class="method-icon"><i class="fas fa-phone"></i></div>
+                                <div class="method-body">
+                                    <span class="method-label">Phone</span>
+                                    <a href="tel:+918767281616" class="method-val">+91 8767281616</a>
+                                </div>
+                            </div>
+
+                            <!-- Location -->
+                            <div class="contact-method-card">
+                                <div class="method-icon"><i class="fas fa-location-dot"></i></div>
+                                <div class="method-body">
+                                    <span class="method-label">Location</span>
+                                    <span class="method-val">Savda / Jalgaon, Maharashtra, India (Available Remote Worldwide)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Professional Social Links -->
+                        <div class="social-connect">
+                            <span class="social-title">Connect Professionally</span>
+                            <div class="social-links-row">
+                                <a href="https://github.com/Nitachaudhari" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Nita Chaudhari GitHub Profile">
+                                    <i class="fab fa-github"></i>
+                                    <span>GitHub</span>
+                                </a>
+                                <a href="https://www.linkedin.com/in/nita-chaudhari-a94038128/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Nita Chaudhari LinkedIn Profile">
+                                    <i class="fab fa-linkedin"></i>
+                                    <span>LinkedIn</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Agency Callout Note -->
+                        <div class="agency-callout">
+                            <div class="callout-icon"><i class="fas fa-lightbulb"></i></div>
+                            <div class="callout-text">
+                                <strong>Building for the Future</strong>
+                                <p>Working towards establishing a dedicated digital agency providing end-to-end web engineering, digital branding, and technical SEO for growing businesses.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Validated Contact Form with Netlify Forms integration -->
+                    <div class="contact-form-panel">
+                        <h3 class="panel-title">Send a Message</h3>
+                        <p class="panel-desc">Fill out the form below. All inquiries are answered promptly within 24 hours.</p>
+
+                        <!-- Form Status Alert -->
+                        <div id="form-status-alert" class="form-alert" role="alert" style="display: none;"></div>
+
+                        <form id="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+                            <!-- Hidden Netlify fields for form handling -->
+                            <input type="hidden" name="form-name" value="contact">
+                            <p class="hidden-field" style="display: none;">
+                                <label>Don't fill this out if you're human: <input name="bot-field"></label>
+                            </p>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="form-name" class="form-label">Your Name <span class="required">*</span></label>
+                                    <div class="input-wrapper">
+                                        <i class="fas fa-user input-icon"></i>
+                                        <input type="text" id="form-name" name="name" class="form-input" placeholder="e.g. Rahul Sharma" required autocomplete="name">
+                                    </div>
+                                    <span class="error-msg" id="name-error" aria-live="polite"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="form-email" class="form-label">Email Address <span class="required">*</span></label>
+                                    <div class="input-wrapper">
+                                        <i class="fas fa-envelope input-icon"></i>
+                                        <input type="email" id="form-email" name="email" class="form-input" placeholder="e.g. rahul@example.com" required autocomplete="email">
+                                    </div>
+                                    <span class="error-msg" id="email-error" aria-live="polite"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-service" class="form-label">Service or Project Type <span class="required">*</span></label>
+                                <div class="input-wrapper">
+                                    <i class="fas fa-list-check input-icon"></i>
+                                    <select id="form-service" name="service" class="form-input" required>
+                                        <option value="">Select a service...</option>
+                                        <option value="Business Website Development">Business Website Development</option>
+                                        <option value="Responsive Web Design">Responsive Web Design / Redesign</option>
+                                        <option value="Web Application Development">Custom Web Application</option>
+                                        <option value="Technical SEO & Performance">Technical SEO &amp; Performance</option>
+                                        <option value="Other Project Inquiry">Other / General Freelance Inquiry</option>
+                                    </select>
+                                </div>
+                                <span class="error-msg" id="service-error" aria-live="polite"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-message" class="form-label">Project Details or Message <span class="required">*</span></label>
+                                <div class="input-wrapper">
+                                    <textarea id="form-message" name="message" class="form-input form-textarea" rows="5" placeholder="Tell me about your business, website goals, or project scope..." required></textarea>
+                                </div>
+                                <span class="error-msg" id="message-error" aria-live="polite"></span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block" id="submit-btn">
+                                <span class="btn-text">Send Message</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Nita Chaudhari. All rights reserved.</p>
-            <p>Built with ❤️ using HTML, CSS & JavaScript</p>
+        <div class="container footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#home" class="logo">
+                        <span class="logo-mark">N</span>
+                        <span class="logo-text">Nita<span>.dev</span></span>
+                    </a>
+                    <p class="footer-tagline">
+                        Building modern, accessible websites and practical digital solutions for businesses. Focused on engineering quality and scalable digital growth.
+                    </p>
+                </div>
+
+                <div class="footer-nav">
+                    <h4 class="footer-heading">Quick Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#projects">Featured Projects</a></li>
+                        <li><a href="#process">Work Process</a></li>
+                        <li><a href="#skills">Technical Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4 class="footer-heading">Contact Details</h4>
+                    <ul class="footer-info-list">
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:nitachaudhari1997@gmail.com">nitachaudhari1997@gmail.com</a></li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:+918767281616">+91 8767281616</a></li>
+                        <li><i class="fas fa-location-dot"></i> <span>Maharashtra, India (Remote)</span></li>
+                    </ul>
+                    <div class="footer-socials">
+                        <a href="https://github.com/Nitachaudhari" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/nita-chaudhari-a94038128/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:nitachaudhari1997@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2026</span> Nita Chaudhari. All rights reserved.</p>
+                <p class="footer-credit">Engineered with Semantic HTML5, Vanilla CSS &amp; JavaScript. Deployed on Netlify.</p>
+            </div>
         </div>
     </footer>
 
+    <!-- Back to Top Button -->
+    <button type="button" class="back-to-top" id="back-to-top" aria-label="Scroll back to top" title="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript File -->
     <script src="index.js"></script>
 </body>
 </html>
