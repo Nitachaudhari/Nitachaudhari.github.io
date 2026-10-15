@@ -16,8 +16,8 @@
     <link rel="canonical" href="https://nitachaudhariportfolio.netlify.app/">
     
     <!-- Theme & Mobile Browser Chrome -->
-    <meta name="theme-color" content="#2563eb" media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="#0b1120" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#7c3aed" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#070b14" media="(prefers-color-scheme: dark)">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -40,7 +40,7 @@
     <!-- Google Fonts & Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
     
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
@@ -106,20 +106,22 @@
     <header class="header" id="header">
         <nav class="navbar container" aria-label="Main Navigation">
             <a href="#home" class="logo" aria-label="Nita Chaudhari Homepage">
-                <span class="logo-mark">N</span>
-                <span class="logo-text">Nita<span>.dev</span></span>
+                <span class="logo-mark">
+                    <span class="logo-mark-inner">N</span>
+                </span>
+                <span class="logo-text">Nita<span class="logo-dot">.</span><span class="logo-ext">dev</span></span>
             </a>
             
             <div class="nav-wrapper" id="nav-wrapper">
                 <ul class="nav-menu" id="nav-menu">
-                    <li><a href="#home" class="nav-link active">Home</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#services" class="nav-link">Services</a></li>
-                    <li><a href="#projects" class="nav-link">Projects</a></li>
-                    <li><a href="#process" class="nav-link">Process</a></li>
-                    <li><a href="#skills" class="nav-link">Skills</a></li>
-                    <li><a href="#experience" class="nav-link">Experience</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="#home" class="nav-link active"><span>Home</span></a></li>
+                    <li><a href="#about" class="nav-link"><span>About</span></a></li>
+                    <li><a href="#services" class="nav-link"><span>Services</span></a></li>
+                    <li><a href="#projects" class="nav-link"><span>Projects</span></a></li>
+                    <li><a href="#process" class="nav-link"><span>Process</span></a></li>
+                    <li><a href="#skills" class="nav-link"><span>Skills</span></a></li>
+                    <li><a href="#experience" class="nav-link"><span>Experience</span></a></li>
+                    <li><a href="#contact" class="nav-link"><span>Contact</span></a></li>
                 </ul>
             </div>
 
@@ -130,7 +132,7 @@
                 </button>
                 
                 <!-- Resume Download CTA -->
-                <a href="NitaPankajChaudhari-FullStackWebDeveloper-ubfK.pdf" class="btn btn-sm btn-outline resume-btn" id="resume-button" target="_blank" rel="noopener noreferrer">
+                <a href="NitaPankajChaudhari-FullStackWebDeveloper-ubfK.pdf" class="btn btn-sm btn-nav-cta resume-btn" id="resume-button" target="_blank" rel="noopener noreferrer">
                     <i class="fas fa-file-pdf"></i>
                     <span>Resume</span>
                 </a>
@@ -148,91 +150,105 @@
     <main id="main-content">
         <!-- Hero Section -->
         <section id="home" class="hero section">
+            <div class="hero-aurora-bg" aria-hidden="true">
+                <div class="aurora-orb aurora-1"></div>
+                <div class="aurora-orb aurora-2"></div>
+                <div class="aurora-orb aurora-3"></div>
+            </div>
+
             <div class="container hero-container">
                 <div class="hero-content">
                     <div class="hero-badge">
-                        <span class="pulse-dot"></span>
-                        <span>Available for Freelance &amp; Business Projects</span>
+                        <span class="pulse-beacon"></span>
+                        <span class="badge-label">Available for Freelance &amp; Business Projects</span>
+                        <span class="badge-chip">2026 Ready</span>
                     </div>
 
                     <h1 class="hero-title">
-                        I Build Modern Websites and Practical Digital Solutions for Businesses.
+                        I Build <span class="gradient-text gradient-violet-blue">Modern Websites</span> &amp; <span class="gradient-text gradient-coral-amber">Digital Solutions</span> for Businesses.
                     </h1>
 
                     <div class="hero-role-wrapper">
-                        <span class="role-prefix">I am a</span>
+                        <span class="role-prefix">Specialized in</span>
                         <span class="typing-role" id="typing-text">Full-Stack Web Developer</span>
                         <span class="cursor-blink" aria-hidden="true">|</span>
                     </div>
 
                     <p class="hero-description">
-                        Computer Engineering graduate crafting responsive, high-speed websites, custom web applications, and SEO-optimized digital platforms designed to strengthen credibility and turn visitors into paying clients.
+                        Computer Engineering graduate crafting responsive, high-speed business websites, full-stack applications, and technical SEO architectures engineered to convert casual visitors into long-term clients.
                     </p>
 
                     <div class="hero-ctas">
-                        <a href="#projects" class="btn btn-primary">
-                            <span>View My Projects</span>
+                        <a href="#projects" class="btn btn-primary btn-glow">
+                            <span>View Featured Projects</span>
                             <i class="fas fa-arrow-right"></i>
                         </a>
-                        <a href="#contact" class="btn btn-secondary">
+                        <a href="#contact" class="btn btn-coral">
                             <i class="fas fa-paper-plane"></i>
                             <span>Let's Talk</span>
                         </a>
                         <a href="#services" class="btn btn-ghost">
                             <span>Explore Services</span>
+                            <i class="fas fa-chevron-right"></i>
                         </a>
                     </div>
 
                     <!-- Core Competency Tags -->
                     <div class="hero-tags" aria-label="Core Technical Focus">
-                        <span class="tag-item"><i class="fas fa-check-circle"></i> B2B Business Sites</span>
-                        <span class="tag-item"><i class="fas fa-check-circle"></i> Full-Stack MERN Apps</span>
-                        <span class="tag-item"><i class="fas fa-check-circle"></i> Technical SEO</span>
-                        <span class="tag-item"><i class="fas fa-check-circle"></i> Mobile-First UX</span>
+                        <span class="tag-item tag-coral"><i class="fas fa-bolt"></i> B2B Corporate Sites</span>
+                        <span class="tag-item tag-violet"><i class="fas fa-layer-group"></i> Full-Stack MERN</span>
+                        <span class="tag-item tag-cobalt"><i class="fas fa-chart-line"></i> Technical SEO</span>
+                        <span class="tag-item tag-emerald"><i class="fas fa-mobile-screen"></i> 100% Mobile First</span>
                     </div>
                 </div>
 
                 <!-- Hero Visual Showcase -->
                 <div class="hero-visual">
                     <div class="visual-card">
+                        <!-- Decorative ambient halo -->
+                        <div class="card-glow-backdrop" aria-hidden="true"></div>
+
                         <div class="code-window">
                             <div class="window-header">
-                                <span class="dot red"></span>
-                                <span class="dot yellow"></span>
-                                <span class="dot green"></span>
-                                <span class="window-title">nita-chaudhari.config.js</span>
+                                <div class="window-controls">
+                                    <span class="dot red"></span>
+                                    <span class="dot yellow"></span>
+                                    <span class="dot green"></span>
+                                </div>
+                                <span class="window-title">nita-chaudhari.config.ts</span>
+                                <span class="window-badge">v2.5</span>
                             </div>
                             <div class="code-body">
 <pre><code><span class="code-keyword">const</span> <span class="code-var">developer</span> = {
   <span class="code-prop">name</span>: <span class="code-str">"Nita Chaudhari"</span>,
-  <span class="code-prop">role</span>: <span class="code-str">"Full-Stack Web Developer"</span>,
-  <span class="code-prop">degree</span>: <span class="code-str">"Computer Science &amp; Engg"</span>,
-  <span class="code-prop">focus</span>: [
-    <span class="code-str">"High-Converting Websites"</span>,
-    <span class="code-str">"Scalable Web Apps"</span>,
-    <span class="code-str">"Technical SEO Optimization"</span>
+  <span class="code-prop">engineering</span>: <span class="code-str">"Computer Science &amp; Engg"</span>,
+  <span class="code-prop">experience</span>: <span class="code-str">"1000+ Hrs Practical Dev"</span>,
+  <span class="code-prop">verifiedDeployments</span>: [
+    <span class="code-str">"IMM Food Innovators (B2B)"</span>,
+    <span class="code-str">"Psychometric AI Platform"</span>,
+    <span class="code-str">"Smart Inventory SaaS"</span>
   ],
-  <span class="code-prop">agencyVision</span>: <span class="code-bool">true</span>,
-  <span class="code-prop">status</span>: <span class="code-str">"Ready for New Clients"</span>
+  <span class="code-prop">agencyGoal</span>: <span class="code-bool">true</span>,
+  <span class="code-prop">availability</span>: <span class="code-str">"Open for New Clients"</span>
 };</code></pre>
                             </div>
                         </div>
 
-                        <!-- Floating Stat Badge 1 -->
+                        <!-- Floating Stat Badge 1 (Coral Accent) -->
                         <div class="floating-badge badge-top-right">
-                            <div class="badge-icon"><i class="fas fa-globe"></i></div>
+                            <div class="badge-icon icon-coral"><i class="fas fa-globe"></i></div>
                             <div class="badge-text">
-                                <strong>B2B &amp; Web Apps</strong>
-                                <span>Real Production Deployments</span>
+                                <strong>Live B2B Client Website</strong>
+                                <span>IMM Food Innovators LLP</span>
                             </div>
                         </div>
 
-                        <!-- Floating Stat Badge 2 -->
+                        <!-- Floating Stat Badge 2 (Violet Accent) -->
                         <div class="floating-badge badge-bottom-left">
-                            <div class="badge-icon"><i class="fas fa-bolt"></i></div>
+                            <div class="badge-icon icon-violet"><i class="fas fa-code-branch"></i></div>
                             <div class="badge-text">
-                                <strong>High Performance</strong>
-                                <span>SEO &amp; Speed Optimized</span>
+                                <strong>Full-Stack Architecture</strong>
+                                <span>React 19 &amp; Node APIs</span>
                             </div>
                         </div>
                     </div>
@@ -244,17 +260,19 @@
         <section id="about" class="about section">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-subtitle">Professional Background</span>
-                    <h2 class="section-title">About Me</h2>
-                    <p class="section-desc">Engineering foundation combined with a passion for web development and digital business solutions.</p>
+                    <span class="section-subtitle subtitle-violet">Professional Background</span>
+                    <h2 class="section-title">Engineering Foundation with an Agency Vision</h2>
+                    <p class="section-desc">Bridging rigorous Computer Engineering fundamentals with practical web design and digital business growth.</p>
                 </div>
 
                 <div class="about-grid">
+                    <!-- Profile Card -->
                     <div class="about-card-profile">
-                        <div class="profile-image-wrapper">
-                            <img src="images/profile.jpeg" alt="Nita Chaudhari - Full-Stack Web Developer" class="profile-img" width="300" height="360" loading="lazy">
-                            <div class="profile-badge">
-                                <i class="fas fa-shield-halved"></i>
+                        <div class="profile-image-container">
+                            <div class="profile-glow" aria-hidden="true"></div>
+                            <img src="images/profile.jpeg" alt="Nita Chaudhari - Full-Stack Web Developer" class="profile-img" width="320" height="380" loading="lazy">
+                            <div class="profile-status-chip">
+                                <span class="pulse-beacon"></span>
                                 <span>Verified Developer</span>
                             </div>
                         </div>
@@ -263,65 +281,66 @@
                             <p class="profile-title">Computer Engineering Graduate &amp; Web Developer</p>
                             <div class="profile-details">
                                 <div class="detail-row">
-                                    <i class="fas fa-map-marker-alt"></i>
+                                    <div class="detail-icon"><i class="fas fa-location-dot"></i></div>
                                     <span>Savda / Jalgaon, Maharashtra (Remote Worldwide)</span>
                                 </div>
                                 <div class="detail-row">
-                                    <i class="fas fa-graduation-cap"></i>
+                                    <div class="detail-icon"><i class="fas fa-graduation-cap"></i></div>
                                     <span>B.E. Computer Science &amp; Engineering</span>
                                 </div>
                                 <div class="detail-row">
-                                    <i class="fas fa-code"></i>
+                                    <div class="detail-icon"><i class="fas fa-award"></i></div>
                                     <span>Masai School 1000+ Hrs Full-Stack Alum</span>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="about-story">
-                        <div class="story-block">
-                            <h3 class="story-heading">
-                                <i class="fas fa-laptop-code"></i>
-                                <span>From Engineering Principles to Practical Web Solutions</span>
-                            </h3>
+                    <!-- Story & Vision Bento Column -->
+                    <div class="about-story-col">
+                        <div class="story-card story-primary">
+                            <div class="story-header">
+                                <div class="story-icon-box icon-box-violet"><i class="fas fa-laptop-code"></i></div>
+                                <h3 class="story-heading">From Engineering Principles to Commercial Digital Solutions</h3>
+                            </div>
                             <p>
-                                With a solid academic foundation in <strong>Computer Science &amp; Engineering</strong> from G.H. Raisoni Institute of Engineering and Management and over <strong>1000+ hours of rigorous full-stack development</strong> at Masai School, I build websites and web applications that solve real-world operational problems.
+                                With an academic degree in <strong>Computer Science &amp; Engineering</strong> from G.H. Raisoni Institute of Engineering and Management and over <strong>1000+ hours of full-stack software development</strong> at Masai School, I don't just assemble pages; I engineer sustainable digital assets.
                             </p>
                             <p>
-                                I don't just write code; I look at web technology through a commercial lens. Whether building an export-ready B2B corporate website like <strong>IMM Food Innovators LLP</strong> or engineering data-driven platforms like an <strong>Assessment Evaluation System</strong>, my priority is clean architecture, responsiveness, and seamless user experiences.
+                                I approach web development through a commercial mindset. Whether building an export-ready corporate B2B presence like <strong>IMM Food Innovators LLP</strong> or designing automated assessment platforms with SQLite and React 19, my goal is always performance, clean code, and business credibility.
                             </p>
                         </div>
 
-                        <div class="story-block">
-                            <h3 class="story-heading">
-                                <i class="fas fa-chart-line"></i>
-                                <span>My Long-Term Vision: Building a Full-Service Digital Agency</span>
-                            </h3>
+                        <div class="story-card story-agency">
+                            <div class="story-header">
+                                <div class="story-icon-box icon-box-coral"><i class="fas fa-rocket"></i></div>
+                                <h3 class="story-heading">My Long-Term Goal: Building a Premier Digital Agency</h3>
+                            </div>
                             <p>
-                                My long-term goal is to establish a sustainable <strong>digital agency</strong> dedicated to helping small businesses, startups, and enterprises establish authority online through modern web design, custom software tools, and technical SEO.
+                                My long-term roadmap is centered around launching a full-service <strong>digital agency</strong> that empowers businesses and startups through cutting-edge web design, custom business applications, and technical SEO optimization.
                             </p>
                             <p>
-                                I am actively taking on freelance projects, remote web development contracts, and long-term client engagements where I can deliver measurable value and reliable technical execution.
+                                I am actively taking on freelance projects, client contracts, and technical partnerships where I can apply engineering precision to tangible business growth.
                             </p>
                         </div>
 
-                        <!-- Highlights Numbers -->
-                        <div class="about-stats-grid">
-                            <div class="stat-box">
-                                <span class="stat-number">10+</span>
-                                <span class="stat-label">Web Projects Completed</span>
+                        <!-- 4 Bento Metric Cards -->
+                        <div class="about-metrics-grid">
+                            <div class="metric-card metric-violet">
+                                <span class="metric-num">10+</span>
+                                <span class="metric-label">Completed Projects</span>
                             </div>
-                            <div class="stat-box">
-                                <span class="stat-number">1000+</span>
-                                <span class="stat-label">Practical Coding Hours</span>
+                            <div class="metric-card metric-cobalt">
+                                <span class="metric-num">1000+</span>
+                                <span class="metric-label">Practical Coding Hours</span>
                             </div>
-                            <div class="stat-box">
-                                <span class="stat-number">100%</span>
-                                <span class="stat-label">Responsive &amp; Mobile-First</span>
+                            <div class="metric-card metric-coral">
+                                <span class="metric-num">100%</span>
+                                <span class="metric-label">Responsive &amp; Mobile-First</span>
                             </div>
-                            <div class="stat-box">
-                                <span class="stat-number">Verified</span>
-                                <span class="stat-label">B2B Production Deployments</span>
+                            <div class="metric-card metric-emerald">
+                                <span class="metric-num">Live</span>
+                                <span class="metric-label">Verified B2B Deployments</span>
                             </div>
                         </div>
                     </div>
@@ -333,121 +352,161 @@
         <section id="services" class="services section">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-subtitle">What I Offer</span>
-                    <h2 class="section-title">Web &amp; Digital Services for Businesses</h2>
-                    <p class="section-desc">Tailored web development services designed to establish your brand, engage customers, and solve real business needs.</p>
+                    <span class="section-subtitle subtitle-coral">Strategic Offerings</span>
+                    <h2 class="section-title">Web &amp; Digital Solutions for Businesses</h2>
+                    <p class="section-desc">Tailored agency-grade services engineered to establish authority, drive client inquiries, and scale digital operations.</p>
                 </div>
 
                 <div class="services-grid">
-                    <!-- Service 1 -->
-                    <div class="service-card">
-                        <div class="service-icon"><i class="fas fa-building"></i></div>
+                    <!-- Service 1: Business Website Development -->
+                    <div class="service-card" data-accent="violet">
+                        <div class="service-card-top">
+                            <div class="service-icon-box icon-grad-violet">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <span class="service-num">01</span>
+                        </div>
                         <h3 class="service-title">Business Website Development</h3>
                         <p class="service-text">
-                            Custom multi-page corporate and commercial websites tailored to communicate your value proposition, build client trust, and drive inquiries.
+                            Custom corporate, commercial, and B2B websites architected to clearly communicate value propositions, establish commercial trust, and generate inbound inquiries.
                         </p>
                         <ul class="service-list">
-                            <li><i class="fas fa-check"></i> Clean, professional branding</li>
-                            <li><i class="fas fa-check"></i> Lead generation &amp; inquiry points</li>
-                            <li><i class="fas fa-check"></i> Modular &amp; scalable structure</li>
+                            <li><i class="fas fa-circle-check"></i> High-conversion architecture</li>
+                            <li><i class="fas fa-circle-check"></i> B2B product catalogs &amp; inquiry flows</li>
+                            <li><i class="fas fa-circle-check"></i> Clean, modular, standards-compliant code</li>
                         </ul>
                     </div>
 
-                    <!-- Service 2 -->
-                    <div class="service-card">
-                        <div class="service-icon"><i class="fas fa-mobile-screen"></i></div>
+                    <!-- Service 2: Responsive Web Design & UI/UX -->
+                    <div class="service-card" data-accent="cobalt">
+                        <div class="service-card-top">
+                            <div class="service-icon-box icon-grad-cobalt">
+                                <i class="fas fa-mobile-screen-button"></i>
+                            </div>
+                            <span class="service-num">02</span>
+                        </div>
                         <h3 class="service-title">Responsive Web Design &amp; UI/UX</h3>
                         <p class="service-text">
-                            Mobile-first interface design that adapts seamlessly across smartphones, tablets, laptops, and ultra-wide desktop monitors.
+                            Pixel-perfect responsive interfaces designed mobile-first to ensure frictionless user journeys across smartphones, tablets, laptops, and ultra-wide displays.
                         </p>
                         <ul class="service-list">
-                            <li><i class="fas fa-check"></i> Touch-friendly navigation</li>
-                            <li><i class="fas fa-check"></i> Modern typography &amp; hierarchy</li>
-                            <li><i class="fas fa-check"></i> Cross-browser consistency</li>
+                            <li><i class="fas fa-circle-check"></i> Fluid typographic hierarchy</li>
+                            <li><i class="fas fa-circle-check"></i> Touch-optimized navigation controls</li>
+                            <li><i class="fas fa-circle-check"></i> Modern design tokens &amp; accessible color contrast</li>
                         </ul>
                     </div>
 
-                    <!-- Service 3 -->
-                    <div class="service-card">
-                        <div class="service-icon"><i class="fas fa-rocket"></i></div>
+                    <!-- Service 3: High-Converting Landing Pages -->
+                    <div class="service-card" data-accent="coral">
+                        <div class="service-card-top">
+                            <div class="service-icon-box icon-grad-coral">
+                                <i class="fas fa-bullseye"></i>
+                            </div>
+                            <span class="service-num">03</span>
+                        </div>
                         <h3 class="service-title">High-Converting Landing Pages</h3>
                         <p class="service-text">
-                            Targeted, high-speed single-page sites built specifically for product launches, marketing promotions, or special service offerings.
+                            Laser-focused landing pages engineered for specific product launches, service offerings, and ad campaigns designed for maximum conversion.
                         </p>
                         <ul class="service-list">
-                            <li><i class="fas fa-check"></i> Compelling CTA placements</li>
-                            <li><i class="fas fa-check"></i> Sub-second initial load speeds</li>
-                            <li><i class="fas fa-check"></i> Validated contact touchpoints</li>
+                            <li><i class="fas fa-circle-check"></i> Compelling CTA placements</li>
+                            <li><i class="fas fa-circle-check"></i> Sub-second initial page load speeds</li>
+                            <li><i class="fas fa-circle-check"></i> Real-time validated contact touchpoints</li>
                         </ul>
                     </div>
 
-                    <!-- Service 4 -->
-                    <div class="service-card">
-                        <div class="service-icon"><i class="fas fa-wand-magic-sparkles"></i></div>
+                    <!-- Service 4: Website Redesign & Modernization -->
+                    <div class="service-card" data-accent="emerald">
+                        <div class="service-card-top">
+                            <div class="service-icon-box icon-grad-emerald">
+                                <i class="fas fa-wand-magic-sparkles"></i>
+                            </div>
+                            <span class="service-num">04</span>
+                        </div>
                         <h3 class="service-title">Website Redesign &amp; Modernization</h3>
                         <p class="service-text">
-                            Upgrading outdated, slow, or cluttered websites into sleek, modern, and accessible digital assets that represent your current brand.
+                            Transforming outdated, slow, or template-heavy legacy websites into vibrant, sleek, and accessible digital platforms that match your current brand stature.
                         </p>
                         <ul class="service-list">
-                            <li><i class="fas fa-check"></i> Modern CSS &amp; layout upgrade</li>
-                            <li><i class="fas fa-check"></i> Code refactoring &amp; decluttering</li>
-                            <li><i class="fas fa-check"></i> Improved user engagement flows</li>
+                            <li><i class="fas fa-circle-check"></i> Modern CSS &amp; layout elevation</li>
+                            <li><i class="fas fa-circle-check"></i> Eliminating clunky code bloat</li>
+                            <li><i class="fas fa-circle-check"></i> Enhanced mobile usability &amp; retention</li>
                         </ul>
                     </div>
 
-                    <!-- Service 5 -->
-                    <div class="service-card">
-                        <div class="service-icon"><i class="fas fa-magnifying-glass-chart"></i></div>
-                        <h3 class="service-title">Technical SEO &amp; On-Page Optimization</h3>
+                    <!-- Service 5: Technical SEO & On-Page Optimization -->
+                    <div class="service-card" data-accent="violet">
+                        <div class="service-card-top">
+                            <div class="service-icon-box icon-grad-violet">
+                                <i class="fas fa-magnifying-glass-chart"></i>
+                            </div>
+                            <span class="service-num">05</span>
+                        </div>
+                        <h3 class="service-title">Technical SEO &amp; On-Page Schema</h3>
                         <p class="service-text">
-                            Architecting your site so search engine crawlers can efficiently discover, parse, and index your business content.
+                            Comprehensive search engine architectural readiness ensuring search crawlers can parse, index, and understand your business offerings accurately.
                         </p>
                         <ul class="service-list">
-                            <li><i class="fas fa-check"></i> Semantic HTML5 &amp; heading tags</li>
-                            <li><i class="fas fa-check"></i> Schema.org JSON-LD structured data</li>
-                            <li><i class="fas fa-check"></i> Open Graph &amp; Twitter social cards</li>
+                            <li><i class="fas fa-circle-check"></i> Semantic HTML5 heading hierarchies</li>
+                            <li><i class="fas fa-circle-check"></i> Schema.org JSON-LD structured data</li>
+                            <li><i class="fas fa-circle-check"></i> Open Graph &amp; Twitter social sharing cards</li>
                         </ul>
                     </div>
 
-                    <!-- Service 6 -->
-                    <div class="service-card">
-                        <div class="service-icon"><i class="fas fa-gauge-high"></i></div>
+                    <!-- Service 6: Performance & Core Web Vitals -->
+                    <div class="service-card" data-accent="coral">
+                        <div class="service-card-top">
+                            <div class="service-icon-box icon-grad-coral">
+                                <i class="fas fa-gauge-high"></i>
+                            </div>
+                            <span class="service-num">06</span>
+                        </div>
                         <h3 class="service-title">Performance &amp; Core Web Vitals</h3>
                         <p class="service-text">
-                            Optimizing assets, scripts, and layout shifts to deliver lightning-fast loading speeds, reducing visitor bounce rates.
+                            Eliminating slow assets, minimizing render-blocking scripts, and optimizing layout stability to deliver lightning-fast load times.
                         </p>
                         <ul class="service-list">
-                            <li><i class="fas fa-check"></i> Image optimization &amp; lazy loading</li>
-                            <li><i class="fas fa-check"></i> CSS &amp; script minification</li>
-                            <li><i class="fas fa-check"></i> Clean, zero-bloat code</li>
+                            <li><i class="fas fa-circle-check"></i> Modern WebP image formats &amp; lazy loading</li>
+                            <li><i class="fas fa-circle-check"></i> CSS/JS minification &amp; zero-bloat delivery</li>
+                            <li><i class="fas fa-circle-check"></i> Green Core Web Vitals readiness</li>
                         </ul>
                     </div>
 
-                    <!-- Service 7 -->
-                    <div class="service-card">
-                        <div class="service-icon"><i class="fas fa-code"></i></div>
+                    <!-- Service 7: Custom Web Application Development -->
+                    <div class="service-card" data-accent="cobalt">
+                        <div class="service-card-top">
+                            <div class="service-icon-box icon-grad-cobalt">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <span class="service-num">07</span>
+                        </div>
                         <h3 class="service-title">Custom Web Application Development</h3>
                         <p class="service-text">
-                            Building functional web applications, internal tools, test systems, and business dashboards powered by modern JavaScript frameworks.
+                            Engineering bespoke internal tools, dashboards, evaluation platforms, and database-connected business apps utilizing modern JavaScript frameworks.
                         </p>
                         <ul class="service-list">
-                            <li><i class="fas fa-check"></i> React.js frontend architecture</li>
-                            <li><i class="fas fa-check"></i> Node.js &amp; Express API backends</li>
-                            <li><i class="fas fa-check"></i> Database integration (MongoDB/SQLite)</li>
+                            <li><i class="fas fa-circle-check"></i> React.js component architectures</li>
+                            <li><i class="fas fa-circle-check"></i> Node.js &amp; Express RESTful API backends</li>
+                            <li><i class="fas fa-circle-check"></i> Database integrations (MongoDB &amp; SQLite)</li>
                         </ul>
                     </div>
 
-                    <!-- Service 8 -->
-                    <div class="service-card">
-                        <div class="service-icon"><i class="fas fa-cloud-arrow-up"></i></div>
-                        <h3 class="service-title">Deployment, Domain &amp; Maintenance</h3>
+                    <!-- Service 8: Deployment & Cloud Maintenance -->
+                    <div class="service-card" data-accent="emerald">
+                        <div class="service-card-top">
+                            <div class="service-icon-box icon-grad-emerald">
+                                <i class="fas fa-cloud-arrow-up"></i>
+                            </div>
+                            <span class="service-num">08</span>
+                        </div>
+                        <h3 class="service-title">Deployment, Domain &amp; Support</h3>
                         <p class="service-text">
-                            End-to-end launch services ensuring your website is securely hosted, properly connected to your domain, and continuously maintained.
+                            Frictionless launch management ensuring your website is securely hosted, connected to custom domains, protected with SSL, and continuously supported.
                         </p>
                         <ul class="service-list">
-                            <li><i class="fas fa-check"></i> Netlify, GitHub Pages, or Cloud setup</li>
-                            <li><i class="fas fa-check"></i> Free SSL certificate configuration</li>
-                            <li><i class="fas fa-check"></i> Reliable ongoing technical support</li>
+                            <li><i class="fas fa-circle-check"></i> Netlify, GitHub Pages, &amp; Cloud setup</li>
+                            <li><i class="fas fa-circle-check"></i> SSL certificate configuration &amp; DNS routing</li>
+                            <li><i class="fas fa-circle-check"></i> Reliable ongoing technical maintenance</li>
                         </ul>
                     </div>
                 </div>
@@ -458,9 +517,9 @@
         <section id="projects" class="projects section">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-subtitle">Portfolio Showcase</span>
-                    <h2 class="section-title">Featured Projects</h2>
-                    <p class="section-desc">Verified real-world client websites, full-stack applications, and technical software implementations.</p>
+                    <span class="section-subtitle subtitle-cobalt">Featured Portfolio</span>
+                    <h2 class="section-title">Verified Projects &amp; Digital Solutions</h2>
+                    <p class="section-desc">Hand-crafted client platforms, full-stack web applications, and technical software implementations.</p>
                 </div>
 
                 <!-- Project Filters -->
@@ -475,19 +534,21 @@
                 <div class="projects-grid" id="projects-grid">
                     
                     <!-- Project 1: IMM Food Innovators LLP (Real Client B2B Website) -->
-                    <article class="project-card" data-category="client">
+                    <article class="project-card project-card-featured" data-category="client">
                         <div class="project-media">
                             <img src="images/project-immfood.webp" alt="IMM Food Innovators LLP Website" class="project-img" loading="lazy">
-                            <div class="project-badge client-badge"><i class="fas fa-briefcase"></i> Client Project</div>
+                            <div class="project-badge badge-coral"><i class="fas fa-briefcase"></i> Verified Client Project</div>
+                            <div class="project-overlay-glow" aria-hidden="true"></div>
                         </div>
                         <div class="project-body">
-                            <div class="project-category">B2B Manufacturing Website &amp; Technical SEO</div>
+                            <div class="project-category-tag tag-coral">B2B Manufacturing &amp; Technical SEO</div>
                             <h3 class="project-title">IMM Food Innovators LLP</h3>
                             <p class="project-desc">
                                 A comprehensive commercial B2B website built for an export-ready food ingredient and dehydrated powder manufacturing company in Maharashtra. Features structured product catalogs, corporate inquiry touchpoints, and extensive technical SEO with Schema.org JSON-LD metadata.
                             </p>
                             <div class="project-highlights">
-                                <strong>Key Features:</strong> B2B Product Categories, ISO &amp; FSSAI showcase, Schema Corporation markup, Inquiry forms, Mobile responsive.
+                                <span class="highlight-title">Key Implemented Features:</span>
+                                <p>B2B Product Categories, ISO &amp; FSSAI showcase, Schema Corporation markup, Inquiry forms, Mobile responsive layout.</p>
                             </div>
                             <div class="project-tech-tags">
                                 <span>HTML5</span>
@@ -497,7 +558,7 @@
                                 <span>B2B SEO</span>
                             </div>
                             <div class="project-actions">
-                                <a href="https://immfoodinnovators.in/" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer">
+                                <a href="https://immfoodinnovators.in/" class="btn btn-sm btn-coral" target="_blank" rel="noopener noreferrer">
                                     <i class="fas fa-arrow-up-right-from-square"></i>
                                     <span>Live Website</span>
                                 </a>
@@ -510,19 +571,21 @@
                     </article>
 
                     <!-- Project 2: Psychometric Assessment Platform (Full-Stack) -->
-                    <article class="project-card" data-category="fullstack">
+                    <article class="project-card project-card-featured" data-category="fullstack">
                         <div class="project-media">
                             <img src="images/project-psychometric.jpg" alt="Psychometric Assessment Platform" class="project-img" loading="lazy">
-                            <div class="project-badge fullstack-badge"><i class="fas fa-layer-group"></i> Full-Stack App</div>
+                            <div class="project-badge badge-violet"><i class="fas fa-layer-group"></i> Full-Stack Web App</div>
+                            <div class="project-overlay-glow" aria-hidden="true"></div>
                         </div>
                         <div class="project-body">
-                            <div class="project-category">Psychological Assessment &amp; Evaluation System</div>
+                            <div class="project-category-tag tag-violet">Psychological Assessment &amp; Evaluation System</div>
                             <h3 class="project-title">Psychometric Test System</h3>
                             <p class="project-desc">
                                 A web application engineered to support psychological assessments, candidate evaluation, and automated test-result scoring across 41 psychometric evaluations. Integrates client-side test flow with Express.js and SQLite3 database persistence.
                             </p>
                             <div class="project-highlights">
-                                <strong>Key Features:</strong> Assessment test-taking runner, automated scoring algorithms, SQLite test database, React Hook Form + Zod validation, responsive dashboard.
+                                <span class="highlight-title">Key Implemented Features:</span>
+                                <p>Assessment test-taking runner, automated scoring algorithms, SQLite test database, React Hook Form + Zod validation, responsive dashboard.</p>
                             </div>
                             <div class="project-tech-tags">
                                 <span>React 19</span>
@@ -533,7 +596,7 @@
                                 <span>Vite</span>
                             </div>
                             <div class="project-actions">
-                                <a href="https://github.com/Nitachaudhari/psychometric-ai" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">
+                                <a href="https://github.com/Nitachaudhari/psychometric-ai" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer">
                                     <i class="fab fa-github"></i>
                                     <span>View Source Code</span>
                                 </a>
@@ -545,16 +608,17 @@
                     <article class="project-card" data-category="fullstack">
                         <div class="project-media">
                             <img src="images/project-smartinventory.png" alt="Smart Inventory System" class="project-img" loading="lazy">
-                            <div class="project-badge fullstack-badge"><i class="fas fa-boxes-stacked"></i> Business System</div>
+                            <div class="project-badge badge-cobalt"><i class="fas fa-boxes-stacked"></i> Business SaaS</div>
                         </div>
                         <div class="project-body">
-                            <div class="project-category">Inventory Tracking &amp; Stock Optimization</div>
+                            <div class="project-category-tag tag-cobalt">Inventory Tracking &amp; Stock Optimization</div>
                             <h3 class="project-title">Smart Inventory System</h3>
                             <p class="project-desc">
                                 A complete inventory management web platform built to help businesses track stock movements, prevent shortages or overstocking, and organize items across categorized warehouse registries with real-time updates.
                             </p>
                             <div class="project-highlights">
-                                <strong>Key Features:</strong> Secure user authentication, live inventory tracking, category search &amp; filtering, item management CRUD dashboard.
+                                <span class="highlight-title">Key Implemented Features:</span>
+                                <p>Secure user authentication, live inventory tracking, category search &amp; filtering, item management CRUD dashboard.</p>
                             </div>
                             <div class="project-tech-tags">
                                 <span>React</span>
@@ -580,16 +644,17 @@
                     <article class="project-card" data-category="fullstack">
                         <div class="project-media">
                             <img src="images/project4/home.png" alt="Fitness Buddy Application" class="project-img" loading="lazy">
-                            <div class="project-badge"><i class="fas fa-users"></i> Community Web App</div>
+                            <div class="project-badge badge-emerald"><i class="fas fa-users"></i> Community Web App</div>
                         </div>
                         <div class="project-body">
-                            <div class="project-category">Social Fitness &amp; Workout Matching</div>
+                            <div class="project-category-tag tag-emerald">Social Fitness &amp; Workout Matching</div>
                             <h3 class="project-title">Fitness Buddy Platform</h3>
                             <p class="project-desc">
                                 A community-driven fitness and workout tracking web application allowing health enthusiasts to find workout partners with matching fitness goals, track training milestones, and share progress.
                             </p>
                             <div class="project-highlights">
-                                <strong>Key Features:</strong> Partner matching algorithm, exercise tracking, Firebase real-time database, responsive UI with Chakra UI.
+                                <span class="highlight-title">Key Implemented Features:</span>
+                                <p>Partner matching algorithm, exercise tracking, Firebase real-time database, responsive UI with Chakra UI.</p>
                             </div>
                             <div class="project-tech-tags">
                                 <span>React</span>
@@ -614,16 +679,17 @@
                     <article class="project-card" data-category="frontend">
                         <div class="project-media">
                             <img src="images/project5/home.png" alt="Kids E-Learning Platform" class="project-img" loading="lazy">
-                            <div class="project-badge"><i class="fas fa-graduation-cap"></i> Interactive EdTech</div>
+                            <div class="project-badge badge-violet"><i class="fas fa-graduation-cap"></i> Interactive EdTech</div>
                         </div>
                         <div class="project-body">
-                            <div class="project-category">Educational Interactive Web Application</div>
+                            <div class="project-category-tag tag-violet">Educational Interactive Web Application</div>
                             <h3 class="project-title">Kids Interactive E-Learning</h3>
                             <p class="project-desc">
                                 An engaging and intuitive e-learning web platform for young children, featuring gamified alphabet lessons, visual puzzles, audio-visual feedback, and responsive animations designed for high retention.
                             </p>
                             <div class="project-highlights">
-                                <strong>Key Features:</strong> Gamified alphabet modules, fruit &amp; star matching games, smooth micro-interactions, child-friendly color themes.
+                                <span class="highlight-title">Key Implemented Features:</span>
+                                <p>Gamified alphabet modules, fruit &amp; star matching games, smooth micro-interactions, child-friendly color themes.</p>
                             </div>
                             <div class="project-tech-tags">
                                 <span>React</span>
@@ -648,16 +714,17 @@
                     <article class="project-card" data-category="client">
                         <div class="project-media">
                             <img src="images/project1/home.png" alt="Bean &amp; Bite Cafe Website" class="project-img" loading="lazy">
-                            <div class="project-badge"><i class="fas fa-mug-hot"></i> Commercial F&amp;B Site</div>
+                            <div class="project-badge badge-coral"><i class="fas fa-mug-hot"></i> Commercial F&amp;B Site</div>
                         </div>
                         <div class="project-body">
-                            <div class="project-category">Hospitality &amp; Restaurant Showcase</div>
+                            <div class="project-category-tag tag-coral">Hospitality &amp; Restaurant Showcase</div>
                             <h3 class="project-title">Bean &amp; Bite Café</h3>
                             <p class="project-desc">
                                 A modern café and restaurant showcase website crafted with sleek glassmorphism visuals, smooth transitions, interactive menu categories, and a customer testimonial slider.
                             </p>
                             <div class="project-highlights">
-                                <strong>Key Features:</strong> Interactive menu filters, testimonial slider, glassmorphic layout, fully responsive mobile styling.
+                                <span class="highlight-title">Key Implemented Features:</span>
+                                <p>Interactive menu navigation, testimonial slider, glassmorphic layout, fully responsive mobile styling.</p>
                             </div>
                             <div class="project-tech-tags">
                                 <span>HTML5</span>
@@ -666,7 +733,7 @@
                                 <span>Responsive UI</span>
                             </div>
                             <div class="project-actions">
-                                <a href="https://bean-and-bite.netlify.app/" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer">
+                                <a href="https://bean-and-bite.netlify.app/" class="btn btn-sm btn-coral" target="_blank" rel="noopener noreferrer">
                                     <i class="fas fa-arrow-up-right-from-square"></i>
                                     <span>Live Demo</span>
                                 </a>
@@ -682,16 +749,17 @@
                     <article class="project-card" data-category="frontend">
                         <div class="project-media">
                             <img src="images/project2/home.png" alt="Whiteboard Visionary Application" class="project-img" loading="lazy">
-                            <div class="project-badge"><i class="fas fa-palette"></i> Canvas App</div>
+                            <div class="project-badge badge-cobalt"><i class="fas fa-palette"></i> Canvas App</div>
                         </div>
                         <div class="project-body">
-                            <div class="project-category">Collaborative Canvas &amp; Drawing Web App</div>
+                            <div class="project-category-tag tag-cobalt">Collaborative Canvas &amp; Drawing Web App</div>
                             <h3 class="project-title">Whiteboard Visionary</h3>
                             <p class="project-desc">
                                 An interactive drawing and sketching web application featuring HTML5 Canvas tools, customizable pencil and color pickers, and cloud synchronization for saving creative sketches.
                             </p>
                             <div class="project-highlights">
-                                <strong>Key Features:</strong> HTML5 Canvas drawing engine, stroke width &amp; color selection, undo/clear features, Firebase integration.
+                                <span class="highlight-title">Key Implemented Features:</span>
+                                <p>HTML5 Canvas drawing engine, stroke width &amp; color selection, undo/clear features, Firebase integration.</p>
                             </div>
                             <div class="project-tech-tags">
                                 <span>HTML5 Canvas</span>
@@ -716,19 +784,21 @@
                     <article class="project-card" data-category="client">
                         <div class="project-media">
                             <div class="portfolio-preview-box">
-                                <i class="fas fa-code-merge"></i>
-                                <span>Nitachaudhari.github.io</span>
+                                <div class="preview-icon-circle"><i class="fas fa-code-merge"></i></div>
+                                <span class="preview-domain">Nitachaudhari.github.io</span>
+                                <span class="preview-sub">Modern Portfolio &amp; Agency Foundation</span>
                             </div>
-                            <div class="project-badge"><i class="fas fa-star"></i> Personal Brand</div>
+                            <div class="project-badge badge-violet"><i class="fas fa-star"></i> Personal Brand</div>
                         </div>
                         <div class="project-body">
-                            <div class="project-category">Web Architecture &amp; Technical SEO Platform</div>
+                            <div class="project-category-tag tag-violet">Web Architecture &amp; Technical SEO Platform</div>
                             <h3 class="project-title">Personal Portfolio Platform</h3>
                             <p class="project-desc">
                                 This portfolio itself, engineered with pure semantic HTML5, modern CSS design tokens, and lightweight JavaScript. Features dark/light mode, structured SEO JSON-LD schema, Netlify Forms validation, and high performance.
                             </p>
                             <div class="project-highlights">
-                                <strong>Key Features:</strong> Custom theme engine, Netlify Forms integration, zero heavy runtime dependencies, 100% Core Web Vitals readiness.
+                                <span class="highlight-title">Key Implemented Features:</span>
+                                <p>Custom theme engine, Netlify Forms integration, zero heavy runtime dependencies, 100% Core Web Vitals readiness.</p>
                             </div>
                             <div class="project-tech-tags">
                                 <span>Vanilla HTML5</span>
@@ -758,69 +828,69 @@
         <section id="process" class="process section">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-subtitle">Collaborative Workflow</span>
-                    <h2 class="section-title">My Project Work Process</h2>
-                    <p class="section-desc">A structured, transparent 6-step approach to take your web project from initial concept to a successful, reliable launch.</p>
+                    <span class="section-subtitle subtitle-emerald">Strategic Roadmap</span>
+                    <h2 class="section-title">My 6-Step Project Work Process</h2>
+                    <p class="section-desc">A transparent, collaborative workflow designed to take your web vision from initial concept to a flawless, high-performing launch.</p>
                 </div>
 
                 <div class="process-timeline">
                     <!-- Step 1 -->
-                    <div class="process-card">
+                    <div class="process-card" data-step="1">
                         <div class="process-step-num">01</div>
-                        <div class="process-icon"><i class="fas fa-comments"></i></div>
+                        <div class="process-icon-box icon-grad-violet"><i class="fas fa-comments"></i></div>
                         <h3 class="process-card-title">Understand Requirements</h3>
                         <p class="process-card-desc">
-                            We discuss your business goals, target audience, preferred aesthetics, and functional requirements to establish a clear project scope.
+                            We discuss your business goals, target audience, brand identity, and technical scope to establish clear project milestones and deliverables.
                         </p>
                     </div>
 
                     <!-- Step 2 -->
-                    <div class="process-card">
+                    <div class="process-card" data-step="2">
                         <div class="process-step-num">02</div>
-                        <div class="process-icon"><i class="fas fa-sitemap"></i></div>
+                        <div class="process-icon-box icon-grad-cobalt"><i class="fas fa-sitemap"></i></div>
                         <h3 class="process-card-title">Plan Structure &amp; Design</h3>
                         <p class="process-card-desc">
-                            Organizing page layout, user journeys, navigation flow, and design tokens to ensure an intuitive and aesthetically pleasing interface.
+                            Organizing page layout, user journeys, navigation flow, and visual design tokens to ensure an intuitive, accessible, and delightful interface.
                         </p>
                     </div>
 
                     <!-- Step 3 -->
-                    <div class="process-card">
+                    <div class="process-card" data-step="3">
                         <div class="process-step-num">03</div>
-                        <div class="process-icon"><i class="fas fa-code"></i></div>
+                        <div class="process-icon-box icon-grad-coral"><i class="fas fa-code"></i></div>
                         <h3 class="process-card-title">Develop the Website</h3>
                         <p class="process-card-desc">
-                            Writing clean, semantic, standards-compliant code with modern CSS and modular JavaScript, implementing all interactive features and content.
+                            Writing clean, semantic, standards-compliant code with modern CSS and modular JavaScript, implementing all interactive components and content.
                         </p>
                     </div>
 
                     <!-- Step 4 -->
-                    <div class="process-card">
+                    <div class="process-card" data-step="4">
                         <div class="process-step-num">04</div>
-                        <div class="process-icon"><i class="fas fa-vial-circle-check"></i></div>
-                        <h3 class="process-card-title">Test Responsiveness &amp; Functionality</h3>
+                        <div class="process-icon-box icon-grad-emerald"><i class="fas fa-vial-circle-check"></i></div>
+                        <h3 class="process-card-title">Test Responsiveness &amp; Speed</h3>
                         <p class="process-card-desc">
-                            Rigorous cross-device testing across smartphones, tablets, and desktops. Checking form validation, link integrity, and load speeds.
+                            Rigorous cross-device testing across smartphones, tablets, and desktops. Auditing form validation, link integrity, and Core Web Vitals.
                         </p>
                     </div>
 
                     <!-- Step 5 -->
-                    <div class="process-card">
+                    <div class="process-card" data-step="5">
                         <div class="process-step-num">05</div>
-                        <div class="process-icon"><i class="fas fa-cloud-arrow-up"></i></div>
+                        <div class="process-icon-box icon-grad-cobalt"><i class="fas fa-cloud-arrow-up"></i></div>
                         <h3 class="process-card-title">Deploy the Website</h3>
                         <p class="process-card-desc">
-                            Production deployment on Netlify or client hosting, SSL certificate activation, custom domain routing, and basic SEO submission.
+                            Production deployment on Netlify or custom hosting, SSL certificate activation, custom domain routing, and search engine submission.
                         </p>
                     </div>
 
                     <!-- Step 6 -->
-                    <div class="process-card">
+                    <div class="process-card" data-step="6">
                         <div class="process-step-num">06</div>
-                        <div class="process-icon"><i class="fas fa-handshake-angle"></i></div>
+                        <div class="process-icon-box icon-grad-violet"><i class="fas fa-handshake-angle"></i></div>
                         <h3 class="process-card-title">Maintenance &amp; Support</h3>
                         <p class="process-card-desc">
-                            Providing agreed post-launch technical support, minor updates, performance checks, and building long-term working relationships.
+                            Providing post-launch technical support, minor iterations, speed checks, and building long-term collaborative partnerships for future growth.
                         </p>
                     </div>
                 </div>
@@ -831,16 +901,16 @@
         <section id="skills" class="skills section">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-subtitle">Technical Expertise</span>
-                    <h2 class="section-title">Skills &amp; Technologies</h2>
+                    <span class="section-subtitle subtitle-violet">Technical Ecosystem</span>
+                    <h2 class="section-title">Skills &amp; Technology Stack</h2>
                     <p class="section-desc">Practical technologies verified through hands-on full-stack development, client projects, and academic engineering.</p>
                 </div>
 
                 <div class="skills-categories-grid">
                     <!-- Category 1: Frontend Development -->
-                    <div class="skill-category-card">
+                    <div class="skill-category-card" data-theme-card="violet">
                         <div class="category-header">
-                            <div class="category-icon"><i class="fab fa-html5"></i></div>
+                            <div class="category-icon icon-grad-violet"><i class="fab fa-html5"></i></div>
                             <h3 class="category-title">Frontend Development</h3>
                         </div>
                         <div class="skills-pills">
@@ -855,9 +925,9 @@
                     </div>
 
                     <!-- Category 2: Backend Development -->
-                    <div class="skill-category-card">
+                    <div class="skill-category-card" data-theme-card="cobalt">
                         <div class="category-header">
-                            <div class="category-icon"><i class="fab fa-node-js"></i></div>
+                            <div class="category-icon icon-grad-cobalt"><i class="fab fa-node-js"></i></div>
                             <h3 class="category-title">Backend Development</h3>
                         </div>
                         <div class="skills-pills">
@@ -871,9 +941,9 @@
                     </div>
 
                     <!-- Category 3: Databases -->
-                    <div class="skill-category-card">
+                    <div class="skill-category-card" data-theme-card="coral">
                         <div class="category-header">
-                            <div class="category-icon"><i class="fas fa-database"></i></div>
+                            <div class="category-icon icon-grad-coral"><i class="fas fa-database"></i></div>
                             <h3 class="category-title">Databases &amp; Storage</h3>
                         </div>
                         <div class="skills-pills">
@@ -885,9 +955,9 @@
                     </div>
 
                     <!-- Category 4: Deployment & Hosting -->
-                    <div class="skill-category-card">
+                    <div class="skill-category-card" data-theme-card="emerald">
                         <div class="category-header">
-                            <div class="category-icon"><i class="fas fa-cloud"></i></div>
+                            <div class="category-icon icon-grad-emerald"><i class="fas fa-cloud"></i></div>
                             <h3 class="category-title">Deployment &amp; Hosting</h3>
                         </div>
                         <div class="skills-pills">
@@ -900,9 +970,9 @@
                     </div>
 
                     <!-- Category 5: SEO & Website Optimization -->
-                    <div class="skill-category-card">
+                    <div class="skill-category-card" data-theme-card="violet">
                         <div class="category-header">
-                            <div class="category-icon"><i class="fas fa-chart-line"></i></div>
+                            <div class="category-icon icon-grad-violet"><i class="fas fa-chart-line"></i></div>
                             <h3 class="category-title">SEO &amp; Optimization</h3>
                         </div>
                         <div class="skills-pills">
@@ -916,9 +986,9 @@
                     </div>
 
                     <!-- Category 6: Tools & Workflow -->
-                    <div class="skill-category-card">
+                    <div class="skill-category-card" data-theme-card="cobalt">
                         <div class="category-header">
-                            <div class="category-icon"><i class="fas fa-toolbox"></i></div>
+                            <div class="category-icon icon-grad-cobalt"><i class="fas fa-toolbox"></i></div>
                             <h3 class="category-title">Workflow &amp; Digital Tools</h3>
                         </div>
                         <div class="skills-pills">
@@ -937,18 +1007,18 @@
         <section id="experience" class="experience section">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-subtitle">Verified History</span>
-                    <h2 class="section-title">Education &amp; Experience</h2>
+                    <span class="section-subtitle subtitle-coral">Verified Credentials</span>
+                    <h2 class="section-title">Education &amp; Experience Timeline</h2>
                     <p class="section-desc">Academic engineering credentials and practical hands-on software development milestones.</p>
                 </div>
 
                 <div class="experience-grid">
                     <!-- Column 1: Education & Training -->
                     <div class="timeline-column">
-                        <h3 class="column-title"><i class="fas fa-graduation-cap"></i> Education &amp; Training</h3>
+                        <h3 class="column-title"><i class="fas fa-graduation-cap"></i> Academic &amp; Technical Foundation</h3>
                         
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
+                        <div class="timeline-item timeline-item-violet">
+                            <div class="timeline-dot dot-violet"></div>
                             <div class="timeline-date">June 2024 - Present</div>
                             <h4 class="timeline-role">Full-Stack Web Development Program</h4>
                             <div class="timeline-org">Masai School, Bengaluru</div>
@@ -962,8 +1032,8 @@
                             </div>
                         </div>
 
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
+                        <div class="timeline-item timeline-item-cobalt">
+                            <div class="timeline-dot dot-cobalt"></div>
                             <div class="timeline-date">July 2015 - August 2018</div>
                             <h4 class="timeline-role">Computer Science &amp; Engineering</h4>
                             <div class="timeline-org">G.H. Raisoni Institute of Engineering &amp; Management, Jalgaon</div>
@@ -980,10 +1050,10 @@
 
                     <!-- Column 2: Practical Experience & Achievements -->
                     <div class="timeline-column">
-                        <h3 class="column-title"><i class="fas fa-briefcase"></i> Practical Work &amp; Achievements</h3>
+                        <h3 class="column-title"><i class="fas fa-briefcase"></i> Practical Deployments &amp; Milestones</h3>
 
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
+                        <div class="timeline-item timeline-item-coral">
+                            <div class="timeline-dot dot-coral"></div>
                             <div class="timeline-date">2024 - Present</div>
                             <h4 class="timeline-role">Freelance Web Developer &amp; Client Projects</h4>
                             <div class="timeline-org">Independent / Client Engagements</div>
@@ -997,8 +1067,8 @@
                             </div>
                         </div>
 
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
+                        <div class="timeline-item timeline-item-emerald">
+                            <div class="timeline-dot dot-emerald"></div>
                             <div class="timeline-date">Verified Credentials</div>
                             <h4 class="timeline-role">Certifications &amp; Milestones</h4>
                             <div class="timeline-org">Masai School &amp; Technical Programs</div>
@@ -1020,57 +1090,59 @@
         <section id="contact" class="contact section">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-subtitle">Get In Touch</span>
+                    <span class="section-subtitle subtitle-violet">Start a Conversation</span>
                     <h2 class="section-title">Let's Discuss Your Project</h2>
-                    <p class="section-desc">Have a website requirement, need a custom web application, or looking for a developer? Send a message and let's make it happen.</p>
+                    <p class="section-desc">Have a website requirement, need a custom web application, or looking for a developer? Send a message and let's create something exceptional.</p>
                 </div>
 
                 <div class="contact-grid">
-                    <!-- Left: Contact Information -->
+                    <!-- Left: Contact Information Panel -->
                     <div class="contact-info-panel">
-                        <h3 class="panel-title">Direct Contact Information</h3>
-                        <p class="panel-desc">
-                            Feel free to reach out directly via email, phone, or LinkedIn. I am always open to discussing new business websites, technical collaborations, and freelance opportunities.
-                        </p>
+                        <div class="panel-header">
+                            <h3 class="panel-title">Direct Contact Information</h3>
+                            <p class="panel-desc">
+                                Reach out directly via email, phone, or LinkedIn. Open to discussions regarding business websites, technical collaborations, and remote freelance opportunities.
+                            </p>
+                        </div>
 
                         <div class="contact-methods">
                             <!-- Email -->
-                            <div class="contact-method-card">
-                                <div class="method-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="contact-method-card method-violet">
+                                <div class="method-icon icon-violet"><i class="fas fa-envelope"></i></div>
                                 <div class="method-body">
-                                    <span class="method-label">Email</span>
+                                    <span class="method-label">Direct Email</span>
                                     <a href="mailto:nitachaudhari1997@gmail.com" class="method-val">nitachaudhari1997@gmail.com</a>
                                 </div>
                             </div>
 
                             <!-- Phone -->
-                            <div class="contact-method-card">
-                                <div class="method-icon"><i class="fas fa-phone"></i></div>
+                            <div class="contact-method-card method-coral">
+                                <div class="method-icon icon-coral"><i class="fas fa-phone"></i></div>
                                 <div class="method-body">
-                                    <span class="method-label">Phone</span>
+                                    <span class="method-label">Phone &amp; WhatsApp</span>
                                     <a href="tel:+918767281616" class="method-val">+91 8767281616</a>
                                 </div>
                             </div>
 
                             <!-- Location -->
-                            <div class="contact-method-card">
-                                <div class="method-icon"><i class="fas fa-location-dot"></i></div>
+                            <div class="contact-method-card method-cobalt">
+                                <div class="method-icon icon-cobalt"><i class="fas fa-location-dot"></i></div>
                                 <div class="method-body">
                                     <span class="method-label">Location</span>
-                                    <span class="method-val">Savda / Jalgaon, Maharashtra, India (Available Remote Worldwide)</span>
+                                    <span class="method-val">Savda / Jalgaon, Maharashtra, India (Available Worldwide)</span>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Professional Social Links -->
                         <div class="social-connect">
-                            <span class="social-title">Connect Professionally</span>
+                            <span class="social-title">Professional Networks</span>
                             <div class="social-links-row">
-                                <a href="https://github.com/Nitachaudhari" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Nita Chaudhari GitHub Profile">
+                                <a href="https://github.com/Nitachaudhari" target="_blank" rel="noopener noreferrer" class="social-btn social-github" aria-label="Nita Chaudhari GitHub Profile">
                                     <i class="fab fa-github"></i>
                                     <span>GitHub</span>
                                 </a>
-                                <a href="https://www.linkedin.com/in/nita-chaudhari-a94038128/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Nita Chaudhari LinkedIn Profile">
+                                <a href="https://www.linkedin.com/in/nita-chaudhari-a94038128/" target="_blank" rel="noopener noreferrer" class="social-btn social-linkedin" aria-label="Nita Chaudhari LinkedIn Profile">
                                     <i class="fab fa-linkedin"></i>
                                     <span>LinkedIn</span>
                                 </a>
@@ -1079,7 +1151,7 @@
 
                         <!-- Agency Callout Note -->
                         <div class="agency-callout">
-                            <div class="callout-icon"><i class="fas fa-lightbulb"></i></div>
+                            <div class="callout-icon-box"><i class="fas fa-lightbulb"></i></div>
                             <div class="callout-text">
                                 <strong>Building for the Future</strong>
                                 <p>Working towards establishing a dedicated digital agency providing end-to-end web engineering, digital branding, and technical SEO for growing businesses.</p>
@@ -1089,8 +1161,10 @@
 
                     <!-- Right: Validated Contact Form with Netlify Forms integration -->
                     <div class="contact-form-panel">
-                        <h3 class="panel-title">Send a Message</h3>
-                        <p class="panel-desc">Fill out the form below. All inquiries are answered promptly within 24 hours.</p>
+                        <div class="panel-header">
+                            <h3 class="panel-title">Send a Message</h3>
+                            <p class="panel-desc">Fill out the form below. Inquiries receive a detailed response within 24 hours.</p>
+                        </div>
 
                         <!-- Form Status Alert -->
                         <div id="form-status-alert" class="form-alert" role="alert" style="display: none;"></div>
@@ -1126,8 +1200,8 @@
                                 <label for="form-service" class="form-label">Service or Project Type <span class="required">*</span></label>
                                 <div class="input-wrapper">
                                     <i class="fas fa-list-check input-icon"></i>
-                                    <select id="form-service" name="service" class="form-input" required>
-                                        <option value="">Select a service...</option>
+                                    <select id="form-service" name="service" class="form-input form-select" required>
+                                        <option value="">Select a service category...</option>
                                         <option value="Business Website Development">Business Website Development</option>
                                         <option value="Responsive Web Design">Responsive Web Design / Redesign</option>
                                         <option value="Web Application Development">Custom Web Application</option>
@@ -1146,7 +1220,7 @@
                                 <span class="error-msg" id="message-error" aria-live="polite"></span>
                             </div>
 
-                            <button type="submit" class="btn btn-primary btn-block" id="submit-btn">
+                            <button type="submit" class="btn btn-primary btn-block btn-submit-glow" id="submit-btn">
                                 <span class="btn-text">Send Message</span>
                                 <i class="fas fa-paper-plane"></i>
                             </button>
@@ -1163,16 +1237,22 @@
             <div class="footer-top">
                 <div class="footer-brand">
                     <a href="#home" class="logo">
-                        <span class="logo-mark">N</span>
-                        <span class="logo-text">Nita<span>.dev</span></span>
+                        <span class="logo-mark">
+                            <span class="logo-mark-inner">N</span>
+                        </span>
+                        <span class="logo-text">Nita<span class="logo-dot">.</span><span class="logo-ext">dev</span></span>
                     </a>
                     <p class="footer-tagline">
-                        Building modern, accessible websites and practical digital solutions for businesses. Focused on engineering quality and scalable digital growth.
+                        Building modern, accessible websites and practical digital solutions for growing businesses. Focused on engineering quality and scalable digital growth.
                     </p>
+                    <div class="footer-agency-pill">
+                        <span class="pulse-beacon beacon-coral"></span>
+                        <span>Future Digital Agency Founder</span>
+                    </div>
                 </div>
 
                 <div class="footer-nav">
-                    <h4 class="footer-heading">Quick Navigation</h4>
+                    <h4 class="footer-heading">Navigation</h4>
                     <ul class="footer-links">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About Me</a></li>
@@ -1185,7 +1265,7 @@
                 </div>
 
                 <div class="footer-contact">
-                    <h4 class="footer-heading">Contact Details</h4>
+                    <h4 class="footer-heading">Get in Touch</h4>
                     <ul class="footer-info-list">
                         <li><i class="fas fa-envelope"></i> <a href="mailto:nitachaudhari1997@gmail.com">nitachaudhari1997@gmail.com</a></li>
                         <li><i class="fas fa-phone"></i> <a href="tel:+918767281616">+91 8767281616</a></li>
@@ -1201,7 +1281,7 @@
 
             <div class="footer-bottom">
                 <p>&copy; <span id="current-year">2026</span> Nita Chaudhari. All rights reserved.</p>
-                <p class="footer-credit">Engineered with Semantic HTML5, Vanilla CSS &amp; JavaScript. Deployed on Netlify.</p>
+                <p class="footer-credit">Engineered with Semantic HTML5, Modern CSS &amp; Vanilla JavaScript. Deployed on Netlify.</p>
             </div>
         </div>
     </footer>
